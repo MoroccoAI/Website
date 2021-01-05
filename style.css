@@ -48,12 +48,13 @@ a,button{
 }
 a:hover{
 	text-decoration:none;
+	font-weight: bold;
 }
 .button .btn{
 	font-weight:500;
 	font-size:15px;
 	height:45px;
-	color:#888888;
+	color:#fff;
 	display:inline-block;
 	line-height:45px;
 	padding:0 45px 0 45px;
@@ -283,7 +284,13 @@ a:hover{
 }
 .header .logo {
 	float: left;
-	padding-top: 20px;
+	padding: 15px 10px;
+	/*object-fit: contain;*/
+	/*padding-top: 20px; */
+}
+
+.logo:hover{
+	background-color:transparent;
 }
 .header .navbar {
 	background: none;
@@ -751,6 +758,13 @@ a:hover{
 .latest-works .button-head{
 	text-align:center;
 }
+
+.join_btn a:hover{
+	background: #160941;
+	
+}
+.join_btn_txt:hover{color:white;
+	font-weight: bold;}
 
 .latest-works .button{
 	margin-top:55px;
