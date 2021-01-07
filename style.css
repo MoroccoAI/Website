@@ -17,6 +17,7 @@ body{
 	background:#F6F6F6;
 	margin:0;
 	padding:0;
+	overflow-x:hidden;
 }
 
 a,button{
@@ -318,6 +319,13 @@ a:hover{
     position: relative;
     display: inline-block;
 }
+
+#nav .nav li a.active {
+	
+	border: 3px solid transparent;
+	border-bottom-color: red;
+}
+
 .header .nav li a i{
 	margin-left:5px;
 	-webkit-transition:all 0.4s ease;
@@ -408,7 +416,7 @@ a:hover{
 	top:0;
 	height:100%;
 	width:100%;
-	background:#000;
+	background:#040919;
 	opacity:0.9;
 }
 #slider .single-slider .text{
@@ -696,7 +704,7 @@ a:hover{
 	z-index:99;
 }
 .latest-works .single-work:hover:before{
-	opacity:0.7;
+	opacity:0.6;
 	visibility:visible;
 	background-color:#fff;
 }
@@ -721,13 +729,33 @@ a:hover{
 }
 
 .img_event:hover img{
-	-webkit-transform:scale(1.25); /* Safari and Chrome */
-	-moz-transform:scale(1.25); /* Firefox */
-	-ms-transform:scale(1.25); /* IE 9 */
-	-o-transform:scale(1.25); /* Opera */
+	-webkit-transform:scale(1.1); /* Safari and Chrome */
+	-moz-transform:scale(1.1); /* Firefox */
+	-ms-transform:scale(1.1); /* IE 9 */
+	-o-transform:scale(1.1); /* Opera */
 	transform:scale(1.1);
 	z-index:-2
 }
+
+
+/*=========================*/
+/* STYLING EVENTS NAV MENU */
+/*================--=======*/
+.Nav-item{
+	display: block;
+	text-align: center;
+	width: 20%;
+}	
+ .Nav-item.active {
+	 color: #e82d00;
+	 border: 6px solid transparent;
+	 border-top-color: red;
+	 border-bottom-color: red;
+}
+}
+/*=======================*/
+/* END STYLING EVENT NAV */
+/*=======================*/
 
 .addToCalendar {
 	float: left;
