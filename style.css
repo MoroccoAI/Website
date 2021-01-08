@@ -747,6 +747,8 @@ a:hover{
 	display: block;
 	text-align: center;
 	width: 20%;
+	font-weight: bold; 
+	font-size: 20px;
 }	
  .Nav-item.active {
 	 color: #fff !important; 
