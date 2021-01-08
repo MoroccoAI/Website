@@ -416,7 +416,9 @@ a:hover{
 	top:0;
 	height:100%;
 	width:100%;
-	background:#040919;
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	opacity:0.9;
 }
 #slider .single-slider .text{
@@ -747,11 +749,21 @@ a:hover{
 	width: 20%;
 }	
  .Nav-item.active {
-	 color: #e82d00;
-	 border: 6px solid transparent;
-	 border-top-color: red;
-	 border-bottom-color: red;
+	 color: #fff !important; 
+	 border: 2px solid transparent;
+	 border-top-color: #ED1C24;
+	 border-bottom-color: #ED1C24;
+	 border-spacing: 2px;
+	 background: #141E30;  
+	 padding: 5px 10px;
+
+    margin-top: -20px;
+	/* background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+	background: linear-gradient(to right, #243B55, #141E30); */
 }
+.PrimaryNav {
+	padding-top: 10px;
+	padding-bottom: 50px;
 }
 /*=======================*/
 /* END STYLING EVENT NAV */
@@ -2302,13 +2314,13 @@ a:hover{
 	margin-right:10px;
 }
 .footer .single-footer .contact .location{
-	color:#868585;
+	color:#fff;
 }
 .footer .single-footer .contact .mail-add{
-	color:#868585;
+	color:#fff;
 }
 .footer .single-footer .contact .call{
-	color:#868585;
+	color:#fff;
 }
 
 
@@ -2318,7 +2330,7 @@ a:hover{
 }
 .footer .single-footer span{
 	display:block;
-	color:#868585;
+	color:#fff;
 	margin: 12px 0px;
 	text-transform:capitalize;
 	-webkit-transition:all 0.4s ease;
@@ -2329,7 +2341,7 @@ a:hover{
 	cursor:pointer;
 }
 .footer .single-footer h2{
-	color:#333;
+	color:#fff;
 	font-size:20px;
 	font-weight:600;
 	text-transform:capitalize;
@@ -2342,7 +2354,7 @@ a:hover{
 	border-right:2px solid;
 }
 .footer .single-footer p{
-	color:#333;
+	color:#fff;
 }
 .footer .single-footer .mail{
 	margin-top:20px;
@@ -2354,7 +2366,7 @@ a:hover{
 	line-height: 45px;
 	width: 245px;
 	margin-right: 15px;
-	color: #868585;
+	color: #fff;
 	padding-left: 18px;
 	display: inline-block;
 	float: left;
