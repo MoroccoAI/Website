@@ -161,7 +161,7 @@
 									<div class="button-head">
 										<div class="button join_btn">
 											<span></span>
-											<a href="#" class="btn">
+											<a href="#contact" class="btn">
 												Join US
 											</a>
 										</div>
@@ -1044,18 +1044,6 @@
         <script src="js/main.js"></script>
         <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js"></script>
         <script src="js/data_filter.js"></script>
-
-        <script>
-	  		const countEl = document.getElementById(‘count’);
-			updateVisitCount();
-			function updateVisitCount() {
-				fetch("https://api.countapi.xyz/hit/moroccoai.github.io/Website/")
-					.then(res => res.json())
-					.then(res => {
-						countEl.innerHTML = res.value;
-					})
-			}
-		</script>
 
     </body>
 </html>
