@@ -44,10 +44,43 @@ $(document).ready(function(){
 		$("#colors" ).attr("href", "css/color/color10.css" );
 		return false;
 	});
+	$(".color11" ).click(function(){
+		$("#colors" ).attr("href", "css/color/color11.css" );
+		return false;
+	});
+	$(".color12" ).click(function(){
+		$("#colors" ).attr("href", "css/color/color12.css" );
+		return false;
+	});
+	$(".color13" ).click(function(){
+		$("#colors" ).attr("href", "css/color/color13.css" );
+		return false;
+	});
+	$(".color14" ).click(function(){
+		$("#colors" ).attr("href", "css/color/color14.css" );
+		return false;
+	});
+	$(".color15" ).click(function(){
+		$("#colors" ).attr("href", "css/color/color15.css" );
+		return false;
+	});
+	$(".color16" ).click(function(){
+		$("#colors" ).attr("href", "css/color/color16.css" );
+		return false;
+	});
+	$(".color17" ).click(function(){
+		$("#colors" ).attr("href", "css/color/color17.css" );
+		return false;
+	});
+	$(".color18" ).click(function(){
+		$("#colors" ).attr("href", "css/color/color18.css" );
+		return false;
+	});
 	
 	$('.color-plate .icon').on( "click", function(){
 		$('.color-plate').toggleClass('active');
 	});
+
 	
 		
 } );

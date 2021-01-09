@@ -10,7 +10,7 @@ html,body {
 	margin: 0;
 }
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size:14px;
 	color:#333;
@@ -184,8 +184,8 @@ a:hover{
 	width: 200px;
 	background: #fff;
 	z-index: 9999;
-	top: 50%;
-	margin-top: --100px;
+	top: 25%;
+	margin-top: --50px;
 	box-shadow: -3px 0px 50px -2px rgba(0,0,0,0.14);
 	right: -200px;
 	-moz-transition: all 0.4s ease;
@@ -256,7 +256,31 @@ a:hover{
 	background:#8e44ad;
 }
 .color-plate span.color10{
-	background:#1DABB8;
+	background:#1e3c72;
+}
+.color-plate span.color11{
+	background:#160941;
+}
+.color-plate span.color12{
+	background:#AB0440;
+}
+.color-plate span.color13{
+	background:#620641;
+}
+.color-plate span.color14{
+	background:#0A073F;
+}
+.color-plate span.color15{
+	background:#2A5298;
+}
+.color-plate span.color16{
+	background:#8e44ad;
+}
+.color-plate span.color17{
+	background:#EF0040;
+}
+.color-plate span.color18{
+	background:#7A1313;
 }
 
 /*============================
@@ -636,6 +660,23 @@ a:hover{
 	margin-left: -40px;
 }
 
+#Services .single-service:hover{
+	box-shadow: 0px 0px 10px #fff;
+	z-index: 999;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);   
+    -moz-transform: scale(1.15);
+    transform: scale(1.15);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    transition: transform .3s ease-in;
+}
+
+#Services .single-service:hover p{
+    color:#000;
+}
 
 #Services .single-service h3{
 	margin:20px 0px;
