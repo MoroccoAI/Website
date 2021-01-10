@@ -90,7 +90,7 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-2 col-xs-2">
 							<div class="logo" style="vertical-align: middle;">
-								<a href="#"><p style="font-family: Product Sans; color:black; font-weight: bold; font-size: xx-large; ">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span></p> </a>
+								<a href="#"><img src="img/logo.png" alt="logo.png"> </a>
 							</div>
 						</div>
 						<div class="col-md-9 col-sm-10">
@@ -130,7 +130,7 @@
 											</ul>
 										</li>
 										-->
-										<li><a href="#contact">Contact</a></li>
+										<li><a href="#footer">Contact</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -164,10 +164,10 @@
 
 	                <div class="carousel-caption">
 	                     
-	                    <h2 class="animated fadeInLeft" style="font-family: Product Sans; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> Webinar Series
+	                    <h2 class="animated fadeInLeft" style="font-family: Product Sans; font-weight: bold">Morocco<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">AI</span> <span style="font-family: Open Sans">Webinar Series </span>
 						</h2>
 	                     <p class="animated fadeInUp">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</p>
-	                     <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Register</a></p>
+	                     <p class="animated fadeInUp"><a href="#gform" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()">Register</a></p>
 	                </div>
 	            </div>
 	            <div class="item" >
@@ -211,7 +211,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="section-title">
-							<h2 style="text-align:center;text-transform:none;"><p style="font-family: Product Sans; color:black; font-weight: bold; font-size: xx-large;">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span> Events </span> </p> </h2>
+							<h2 style="text-align:center;text-transform:none;"><p style="font-family: Product Sans; color:black; font-weight: bold; font-size: xx-large;">Morocco<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">AI</span> <span> Events </span> </p> </h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 					</div>
@@ -250,10 +250,10 @@
 									<br/>
 									<i class="far fa-clock"></i> &nbsp 8 PM (GMT+1)
 								</p>
-								<div class="button-head">
+								<div class="button-head" id="reg_btn">
 									<div class="button join_btn" >
 										<span></span>
-										<a href="#" class="btn", style="color:#ED1C24; ">
+										<a href="#gform" class="btn" style="color:#ED1C24;" onclick="toShow()">
 											Register Here
 										</a>
 										
@@ -264,7 +264,7 @@
 					<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
 					<div class="col-md-6 col-sm-12 col-xs-12 img_event " style="text-align:center; ">
 						<div class="single-work single-service", style="border-radius: 25px">
-						<img src="img/WebinarPoster.png" />
+							<img src="img/WebinarPoster.png" />
 						<div class="works-hover">
 						</div>
 						</div>
@@ -838,7 +838,7 @@
 		  -->	
 		
 		<!--/ contact Area -->
-		<section id="contact" class="contact section" data-stellar-background-ratio="0.5">
+		<!--section id="contact" class="contact section" data-stellar-background-ratio="0.5">
 				<div class="container">
 					<div class="row">
 						<div class="contact-head">
@@ -876,13 +876,13 @@
 											</div>
 										</form>
 									</div>
-								<!--/ End Contact Form -->
+								</ End Contact Form >
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-		</section>
+		</section -->
 		<!--/ End contact Area -->
 		
 		<!-- Clients Area 
@@ -942,6 +942,23 @@
 								background: linear-gradient(to right, #243B55, #141E30); opacity:0.9;
 		background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 		-->
+
+
+		<!-- BEGIN REGISTER FORM -->
+
+		<section class="register_form" id="gform" style="display: none;">
+			
+			<div id="reg_form" style="width: 100%; height: 50%; ">
+				<iframe id="frame"  src="https://docs.google.com/forms/d/e/1FAIpQLSceZJ7dBWazjXhwqeEnr7l-uACEGQpVnKvh9HMj5BHWBFe9bA/viewform?embedded=true&widget=false&headers=false&chrome=false" width="640" height="2339" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height: 400px; ">Loading…</iframe>
+			</div>
+
+		</section>
+
+	
+		
+		<!-- END REGISTER FORM -->
+
+
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer section" style="background: #141E30; 
@@ -1077,10 +1094,17 @@
 			  dots[slideIndex-1].className += " active";
 			}
 		</script>
-
-	
-
 	<!-- END SLIDER SCRIPT -->
+
+	<!-- FORM Script -->
+	<script>
+		
+  		function toShow() {
+		  var iframe = document.getElementById('gform');
+		  iframe.style.display = 'block';
+		}
+    </script>
+	<!-- END FORM Script -->
 
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
