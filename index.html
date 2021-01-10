@@ -83,7 +83,7 @@
 		</div> 
 		
 		<!-- Header Area -->
-		<header id="header" class="header">
+		<header id="header" class="header navbar-header-wrapper">
 			<!-- Header Inner -->
 			<div class="header-inner">
 				<div class="container">
@@ -96,7 +96,7 @@
 						<div class="col-md-9 col-sm-10">
 							<div class="mobile-menu"></div>
 							<nav class="navbar navbar-default">
-								<div class="collapse navbar-collapse">
+								<div class="collapse navbar-collapse ">
 									<ul id="nav" class="nav navbar-nav" style="font-weight: bold">
 										<li class="current"><a href="#myCarousel">Home</a>
 										</li>
@@ -160,7 +160,7 @@
 								background: linear-gradient(to right, #243B55, #141E30); ">
 									
 									<img src="img/WebinarPoster.png" style=" width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding-top: 20px">
-								</div>
+					</div>
 
 	                <div class="carousel-caption">
 	                     
@@ -170,7 +170,7 @@
 	                     <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Register</a></p>
 	                </div>
 	            </div>
-	            <div class="item">
+	            <div class="item" >
 	                <!-- Set the second background image using inline CSS below. -->
 	                
 
@@ -181,30 +181,30 @@
 								<b>Artificial Intelligence</b>
 							</span>
 	                     </h2>
-	                     <p class="animated fadeInUp">
-	                     	<a href="#contact" class="btn btn-transparent btn-rounded btn-large">Join us</a></p>
+	                     <!--p class="animated fadeInUp">
+	                     	<a href="#contact" class="btn btn-transparent btn-rounded btn-large">Join us</a></p-->
 	                </div>
 
-	                <div class="fill">
-		               	<div style="width: 100%; height:100%; background: #141E30;" id="particles-js">
+	                <div class="fill" >
+		               	<div id="particles-js" width="100%" height="100%">
+		               		<canvas style="width: 100%; height: 100%; position: fixed;"></canvas>
 						</div>
 					</div>
-	                
 					
 
 	        	</div>
 
 		        <!-- Controls -->
-		        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="pointer-events: all">
 		            <span class="icon-prev"></span>
 		        </a>
-		        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="pointer-events: all">
 		            <span class="icon-next"></span>
 		        </a>
 		    </div>
 		</div>
 
-
+		
 		<!-- MoroccoAI Events -->
 		<section id="latest-works" class="latest-works section">
 			<div class="container">
@@ -266,15 +266,6 @@
 						<div class="single-work single-service", style="border-radius: 25px">
 						<img src="img/WebinarPoster.png" />
 						<div class="works-hover">
-							<div class="button-head" style="text-align: center; ">
-								<div class="button join_btn">
-									<span></span>
-									<a href="#" class="btn", style="color:#ED1C24">
-										Register Here
-									</a>
-									
-								</div>
-							</div>
 						</div>
 						</div>
 					</div>
@@ -975,11 +966,11 @@
 									<p class="mail-add" style="font-size:medium;"><i class="fas fa-envelope" aria-hidden="true"></i>contact@morocco.ai</p>
 									<br>
 									<ul class="social" >
-										<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+										<!--li><a href=""><i class="fab fa-facebook-f"></i></a></li-->
 										<li><a href="https://twitter.com/MoroccoAI" target="_blank"><i class="fab fa-twitter"></i></a></li>
-										<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+										<!--li><a href=""><i class="fab fa-linkedin"></i></a></li-->
 										<li><a href="https://www.youtube.com/channel/UCS9NQGwx4ASydsKZBZ5wFrw?guided_help_flow=5" target="_blank"><i class="fab fa-youtube"></i></a></li>
-										<li><a href=""><i class="fab fa-slack"></i></a></li>
+										<!--li><a href=""><i class="fab fa-slack"></i></a></li-->
 										<li><a href="mailto:contact@morocco.ai"><i class="fas fa-envelope"></i></a></li>
 										<li><a id="count">0</a></li>
 									</ul>
@@ -1087,6 +1078,8 @@
 			}
 		</script>
 
+	
+
 	<!-- END SLIDER SCRIPT -->
 
         <script src="js/jquery.min.js"></script>
@@ -1103,8 +1096,14 @@
 		<script src="js/jquery.stellar.min.js"></script>
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/animate-text.js"></script>
+
 		<script src="js/particles.min.js"></script>
 		<script src="js/particle-code.js"></script>
+
+		<script src= "https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.5/tsparticles.min.js"> </script>
+
+		<script src="js/tsparticles.js"></script>
+
 		<script src="js/jquery.counterup.min.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"></script>
         <script type="text/javascript" src="js/gmaps.min.js"></script>

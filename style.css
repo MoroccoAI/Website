@@ -293,21 +293,30 @@ a:hover{
 }
 .header .header-inner.sticky{
 	z-index:99999;
+	background: #141E30;  
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+	background: linear-gradient(to right, #243B55, #141E30);
+
 	
 }
 .header .navbar-collapse{
 	padding:0;
 }
 
-.header .header-inner {
-	z-index:999;
-	height: 80px;
-	background:#fff;
-	-webkit-box-shadow:0px 0px 5px #000;
-	-moz-box-shadow:0px 0px 5px #000;
-	box-shadow:0px 0px 5px #000;
+.header .header-inner{
+	position: absolute;
+	border-bottom-style: none;
+	background-color: transparent;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    
 	
 }
+
+
 .header .logo {
 	float: left;
 	padding: 15px 10px;
@@ -328,30 +337,36 @@ a:hover{
 	height: 0px;
 	min-height: 0px;
 	float: right;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+
 }
 .header .nav li{
 	margin-right: 12px;
     float: left;
+    display: block;
+  	position: relative;
+  	text-decoration: none;
+  	
+  	
 
 }
 .header .nav li:last-child{
 	margin:0;
 }
 .header .nav li a {
-	color:#333;
+	color:#fff;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 30px 10px;
+    padding: 30px 15px;
     position: relative;
     display: inline-block;
     font-weight: bold;
-}
-
-#nav .nav li a.active {
-	
-	border: 3px solid transparent;
-	border-bottom-color: red;
 }
 
 .header .nav li a i{
@@ -368,9 +383,14 @@ a:hover{
 .header #nav li:hover a{
 	box-shadow:none;
 	text-shadow:none;
-	border:none;
+	display: block;
 }
 
+.header #nav li a {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
 
 
 /* dropdown */
@@ -423,12 +443,13 @@ a:hover{
 /*===================
 	End Header CSS
 =====================*/
+/* #myCarousel .carousel-inner .item .fill #particles-js #carousel-div canvas{} */
 
-
-
-
-
-
+canvas {
+display:block;
+position: fixed;
+z-index: -10;
+}
 
 /*===================
 	Slider CSS
@@ -444,15 +465,19 @@ body {
 
 .carousel, .item, .active {
   height: 100%;
+  
 }
 
 .carousel-inner {
   height: 100%;
   background: #000;
+  position: relative;
+
 }
 
 .carousel-caption {
   padding-bottom: 80px;
+  padding-top: 200px;
   max-width: 100%;
 	width:100%;
 	left: 0;
@@ -471,12 +496,14 @@ body {
 .fill {
   width: 100%;
   height: 100%;
+  padding-top: 60px;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   opacity: 0.6;
+  background: #141E30;
 }
 
 /**
@@ -521,6 +548,8 @@ body {
     transform: none;
   }
 }
+
+
 
 @keyframes fadeInRight {
   from {
