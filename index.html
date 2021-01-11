@@ -53,9 +53,6 @@
 		
     </head>
     <body>
-	
-	
-	
 		<div class="color-plate ">
 			<a class="icon"><i class="fa fa-cog fa-spin"></i></a>
 			<h2>Ruby Color</h2>
@@ -85,12 +82,12 @@
 		<!-- Header Area -->
 		<header id="header" class="header navbar-header-wrapper">
 			<!-- Header Inner -->
-			<div class="header-inner">
+			<div class="header-inner" style="background-color: #1A2A3F;">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-sm-2 col-xs-2">
 							<div class="logo" style="vertical-align: middle;">
-								<a href="#"><p style="font-family: Product Sans; font-weight: bold; font-size: xx-large; color:#000">Morocco<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">AI</span> </p> </a>
+								<a href="#"><p style="font-family: Open Sans; font-weight: bold; font-size: xx-large; color:#fff">Morocco<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">AI</span> </p> </a>
 							</div>
 						</div>
 						<div class="col-md-9 col-sm-10">
@@ -98,39 +95,15 @@
 							<nav class="navbar navbar-default">
 								<div class="collapse navbar-collapse ">
 									<ul id="nav" class="nav navbar-nav" style="font-weight: bold">
-										<li class="current"><a href="#myCarousel">Home</a>
+										<li class="current">
+											<a href="#home">Home</a>
 										</li>
-										<!--li><a href="#Services">Services</a></li-->
-										<!--li><a href="#latest-works">Events<i class="fa fa-caret-down" aria-hidden="true"></i></a  -->
-										<li><a href="#latest-works">Events</a>
+										<li>
+											<a href="#events">Events</a>
 										</li>
-										<li><a href="#Services">About Us</a>
+										<li>
+											<a href="#Services">Who We Are</a>
 										</li>
-											<!--
-											<ul class="dropdown">
-												<li><a href="#conferences">Conferences</a></li>
-												<li><a href="#webinars">Webinars</a></li>
-												<li><a href="#podcasts">Podcasts</a></li>
-											</ul>
-											-->
-										
-										<!--
-										<li><a href="#blog">Blogs<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-											<ul class="dropdown">
-												<li><a href="blog.html">Blog Archive</a></li>
-												<li><a href="blog-single.html">Blog Single</a></li>
-											</ul>
-										</li> 
-
-										<li><a href="#team">Team</a></li>
-										<li><a href="#">Pages <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-											<ul class="dropdown">
-												<li><a href="404.html">Error 404</a></li>
-												<li><a href="mail-success.html">Mail Success</a></li>
-											</ul>
-										</li>
-										-->
-										<li><a href="#footer">Contact</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -144,61 +117,70 @@
 
   
 	  	<!-- Full Page Image Background Carousel Header -->
-	    <div id="myCarousel" class="carousel slide">
+	    <div id="home" class="carousel slide">
 	        <!-- Indicators -->
 	        <ol class="carousel-indicators">
-	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	            <li data-target="#myCarousel" data-slide-to="1"></li>
+	            <li data-target="#home" data-slide-to="0" class="active"></li>
+	            <li data-target="#home" data-slide-to="1"></li>
+				<li data-target="#home" data-slide-to="2"></li>
 	        </ol>
 
 	        <!-- Wrapper for Slides -->
 	        <div class="carousel-inner">
-	            <div class="item active">
+	            <div class="item active" >
 	                <!-- Set the first background image using inline CSS below. -->
-	                <div class="fill" style="background: #141E30;  
-								background: -webkit-linear-gradient(to right, #243B55, #141E30);  
-								background: linear-gradient(to right, #243B55, #141E30); ">
-									
-									<img src="img/WebinarPoster.png" style=" width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding-top: 20px">
-					</div>
-
-	                <div class="carousel-caption">
-	                     
-	                    <h2 class="animated fadeInLeft" style="font-family: Product Sans; font-weight: bold">Morocco<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">AI</span> <span style="font-family: Open Sans">Webinar Series </span>
-						</h2>
-	                     <p class="animated fadeInUp">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</p>
-	                     <p class="animated fadeInUp"><a href="#gform" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()">Register</a></p>
-	                </div>
-	            </div>
-	            <div class="item" >
-	                <!-- Set the second background image using inline CSS below. -->
-	                
-
 		           	 <div class="carousel-caption">
-	                     <h2 class="animated fadeInLeft cd-headline clip is-full-width" style="font-weight: bold;">Morocco 
+						 <h2 class="animated fadeInLeft cd-headline clip is-full-width" style="font-weight: bold;">Morocco 
 	                 		<span class="cd-words-wrapper">
 								<b class="is-visible">AI</b>
 								<b>Artificial Intelligence</b>
 							</span>
 	                     </h2>
-	                     <!--p class="animated fadeInUp">
-	                     	<a href="#contact" class="btn btn-transparent btn-rounded btn-large">Join us</a></p-->
 	                </div>
-
 	                <div class="fill" >
-		               	<div id="particles-js" width="100%" height="100%">
-		               		<canvas style="width: 100%; height: 100%; position: fixed;"></canvas>
+						<div id="particles-js" width="100%" height="100%">
+		               		<canvas 
+							   style="position:absolute; width: 100%; height: 100%; background-color: #ff6800; background-image: url('img/morocco2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
+							</canvas>
 						</div>
 					</div>
-					
-
 	        	</div>
-
+				<!-- //////////////////////////////////////////-->
+				<div class="item" >
+	                <!-- Set the first background image using inline CSS below. -->
+		           	 <div class="carousel-caption">
+	                    <h2 class="animated fadeInLeft" style="align: right; font-family: Open Sans; font-weight: bold">Webinar<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">Series</span>
+						</h2>
+	                     <p class="animated fadeInUp"><a href="./register.html" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()">Register</a></p>
+	                </div>
+	                <div class="fill" >
+						<div id="particles-js" width="100%" height="100%">
+		               		<canvas 
+							   style="position:absolute; width: 100%; height: 100%; background-color: #ff6800; background-image: url('img/WebinarPoster2.png'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
+							</canvas>
+						</div>
+					</div>
+	        	</div>
+				<!-- //////////////////////////////////////////-->
+				<div class="item" >
+	                <!-- Set the first background image using inline CSS below. -->
+		           	 <div class="carousel-caption">
+	                     <p class="animated fadeInUp"><a href="http://morocco.ai/events/2019/04/29/IndabaXMorocco/" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()">Past Conferences</a></p>
+	                </div>
+	                <div class="fill" >
+						<div id="particles-js" width="100%" height="100%">
+		               		<canvas 
+							   style="position:absolute; width: 100%; height: 100%; background-color: #ff6800; background-image: url('img/indabaX.png'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
+							</canvas>
+						</div>
+					</div>
+	        	</div>
+				<!-- //////////////////////////////////////////-->
 		        <!-- Controls -->
-		        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="pointer-events: all">
+		        <a class="left carousel-control" href="#home" data-slide="prev" style="pointer-events: all">
 		            <span class="icon-prev"></span>
 		        </a>
-		        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="pointer-events: all">
+		        <a class="right carousel-control" href="#home" data-slide="next" style="pointer-events: all">
 		            <span class="icon-next"></span>
 		        </a>
 		    </div>
@@ -206,12 +188,12 @@
 
 		
 		<!-- MoroccoAI Events -->
-		<section id="latest-works" class="latest-works section">
+		<section id="events" class="latest-works section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="section-title">
-							<h2 style="text-align:center;text-transform:none;"><p style="font-family: Product Sans; color:black; font-weight: bold; font-size: xx-large;">Morocco<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Events </span> </p> </h2>
+							<h2 style="text-align:center;text-transform:none;"><p style="font-family: Open Sans; color:black; font-weight: bold; font-size: xx-large;">Morocco<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Events </span> </p> </h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 					</div>
@@ -221,7 +203,7 @@
 						<!-- Project Nav -->
 						<div class="works-menu wow fadeInUp " data-wow-duration="0.6s" data-wow-delay="0.3s">
 							<ul class="PrimaryNav ">
-								<li class="Nav-item event_sel active" onclick="filterSelection('upcoming')" ><i class="fas fa-calendar-check"></i> UPCOMING</li>
+								<li class="Nav-item event_sel active" onclick="filterSelection('upcoming')" ><i class="fas fa-calendar-check"></i> Upcomming</li>
 								<li class="Nav-item event_sel" onclick="filterSelection('conferences')"><i class="fab fa-connectdevelop"></i> Conferences</li>
 								<li class="Nav-item event_sel" onclick="filterSelection('webinars')" ><i class='fas fa-video'></i> Webinars</li>
 								<li class="Nav-item event_sel" onclick="filterSelection('podcasts')" ><i class="fas fa-podcast"></i> Podcasts</li>
@@ -233,12 +215,11 @@
 
 				
 				<div class="upcoming filterDiv">	
-					
 					<div class="row" style="max-height: 300px; "> 
 						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
 							<div class="col-md-6 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
 
-								<h3 style="font-family: Product Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar Series</span>
+								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar Series</span>
 								</h3>
 								<br/><br/>
 								<p> <span style="font-weight: bold">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span>, by Khalil Mrini, a PhD student at NLP Group of University of California, San Diego</p>
@@ -253,7 +234,7 @@
 								<div class="button-head" id="reg_btn">
 									<div class="button join_btn" >
 										<span></span>
-										<a href="#gform" class="btn" style="color:#ED1C24;" onclick="toShow()">
+										<a href="./register.html" class="btn" style="color:#ED1C24;" onclick="toShow()">
 											Register Here
 										</a>
 										
@@ -261,68 +242,80 @@
 								</div>
 							</div>
 						</div>
-					<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-					<div class="col-md-6 col-sm-12 col-xs-12 img_event " style="text-align:center; ">
-						<div class="single-work single-service", style="border-radius: 25px">
-							<img src="img/WebinarPoster.png" />
-						<div class="works-hover">
+						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
+							<div class="col-md-6 col-sm-12 col-xs-12 img_event " style="text-align:center; ">
+								<div class="single-work single-service", style="border-radius: 25px">
+									<img src="img/WebinarPoster.png" />
+									<div class="works-hover">
+									</div>
+								</div>
+							</div>
 						</div>
-						</div>
 					</div>
-					</div>
-					</div>
-					
 				</div>
 
 				<!-- START CONFERENCE SUB SECTION -->
-					
-					
-				<div class="conferences filterDiv"  >
+				<div class="conferences filterDiv" >
 					<div class="row">
-					<div class="wow fadeInLeft single-service" data-wow-duration="0.6s" data-wow-delay="0.3s">
-					<div class="col-md-6 col-sm-12 col-xs-12" style="background:#F6F6F6; border:1px solid transparent; padding: 20px; ">
-						 
-							
-						<h3 style="color:black; font-weight: bold">
-							IndabaX Morocco ’19
-						</h3>
-						<br/><br/>
-						<p style="font-weight: bold">IndabaX Morocco 2019, a two days event that was held at the Faculty of Sciences and Techniques of Mohammedia (FSTM) </p>
-						<br/>
-							
-					</div>
-					</div>
-					<div class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">
-						<div class="img_event single-work single-service" style="text-align:center;">
-							<img src="img/IndabaX-logo.png" />
-							<div class="works-hover">
-								<a href="http://morocco.ai/events/2019/04/29/IndabaXMorocco/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+						<div class="wow fadeInLeft single-service" data-wow-duration="0.6s" data-wow-delay="0.3s">
+							<div class="col-md-6 col-sm-12 col-xs-12" style="background:#F6F6F6; border:1px solid transparent; padding: 20px; ">
+								<h3 style="color:black; font-weight: bold">
+									IndabaX Morocco ’19
+								</h3>
+								<br/><br/>
+								<p style="font-weight: bold">IndabaX Morocco 2019, a two days event that was held at the Faculty of Sciences and Techniques of Mohammedia (FSTM) </p>
+								<br/>							
 							</div>
 						</div>
-						
+
+						<div class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">
+							<div class="img_event single-work single-service" style="text-align:center;">
+								<img src="img/IndabaX-logo.png" />
+								<div class="works-hover">
+									<a href="http://morocco.ai/events/2019/04/29/IndabaXMorocco/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
 					</div>
-					</div>	
 				</div>
-					
-				
-					
 				<!-- END CONFERENCE SUB SECTION -->
 				
 				<!-- START WEBINARS SUB SECTION -->
-
 				<div class="webinars filterDiv">	
-					<div class="row">
-					<div class="col-md-6 col-sm-12 col-xs-12"  style="background:#F6F6F6; min-width: 600px; min-height: 200px; text-align: center;">
-						 
-							<div style="padding-top: 25px; text-align: center">
-								<h3 style=" font-weight: bold">
-									Coming soon ...
+					<div class="row" style="max-height: 300px; "> 
+						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
+							<div class="col-md-6 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
+								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar Series</span>
 								</h3>
 								<br/><br/>
-								<p> <span style="font-weight: bold"> </p>
+								<p> <span style="font-weight: bold">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span>, by Khalil Mrini, a PhD student at NLP Group of University of California, San Diego</p>
 								<br/>
+								<p style="font-weight: bold">
+									<i class="fas fa-map-marker-alt"></i> &nbsp Youtube/register Link
+									<br/>
+									<i class="fas fa-calendar-day"></i> &nbsp January, 28<sup>th</sup>  2021
+									<br/>
+									<i class="far fa-clock"></i> &nbsp 8 PM (GMT+1)
+								</p>
+								<div class="button-head" id="reg_btn">
+									<div class="button join_btn" >
+										<span></span>
+										<a href="./register.html" class="btn" style="color:#ED1C24;" onclick="toShow()">
+											Register Here
+										</a>
+									</div>
+								</div>
 							</div>
-					</div>
+						</div>
+						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
+							<div class="col-md-6 col-sm-12 col-xs-12 img_event " style="text-align:center; ">
+								<div class="single-work single-service", style="border-radius: 25px">
+									<img src="img/WebinarPoster.png" />
+									<div class="works-hover">
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 					
@@ -332,8 +325,7 @@
 
 				<div class="podcasts filterDiv">	
 					<div class="row">
-					<div class="col-md-6 col-sm-12 col-xs-12"  style="background:#F6F6F6; min-width: 600px; min-height: 200px; text-align: center;">
-						 
+						<div class="col-md-6 col-sm-12 col-xs-12"  style="background:#F6F6F6; min-width: 600px; min-height: 200px; text-align: center;">
 							<div style="padding-top: 25px; text-align: center">
 								<h3 style=" font-weight: bold; text-align: center;">
 									Coming soon ...
@@ -342,19 +334,17 @@
 								<p> <span style="font-weight: bold"> </p>
 								<br/>
 							</div>
-					</div>
+						</div>
 					</div>
 				</div>
 					
 				<!-- END Podcasts SUB SECTION -->
 
-				
-			
 			</div>
 		</section>
 		<!--/ End Works Area -->
 		
-		<!-- Start About US -->
+		<!-- Start Who We Are -->
 		<section id="Services" class="section" style="background: #141E30;  
 		background: -webkit-linear-gradient(to right, #243B55, #141E30);  
 		background: linear-gradient(to right, #243B55, #141E30); ">
@@ -362,7 +352,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="section-title">
-							<h2 style="color:#fff">About <span>US</span></h2>
+							<h2 style="color:#fff">Who We Are </h2>
 							<p>MoroccoAI brings together researchers and professionals to empower Morocco’s presence in Artificial Intelligence</p>
 						</div>
 					</div>
@@ -972,7 +962,7 @@
 							<div class="single-footer">
 								<div class="logo" >
 									<a href="#" >
-										<p style="white-space: nowrap !important;font-family: Product Sans; color:black; font-weight: bold; font-size: xx-large; display: inline-block;">Morocco<span style="display: inline-block; font-family: 'Library 3 am';color:#ED1C24; white-space: normal;">AI
+										<p style="white-space: nowrap !important;font-family: Open Sans; color:#fff; font-weight: bold; font-size: xx-large; display: inline-block;">Morocco<span style="display: inline-block; font-family: 'Library 3 am';color:#ED1C24; white-space: normal;">AI
 											</span>
 										</p> 
 									</a>
@@ -1134,8 +1124,6 @@
         <script src="js/main.js"></script>
         <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js"></script>
         <script src="js/data_filter.js"></script>
-
-        
 
     </body>
 </html>
