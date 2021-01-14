@@ -464,11 +464,7 @@ html {
 =====================*/
 /* #myCarousel .carousel-inner .item .fill #particles-js #carousel-div canvas{} */
 
-canvas {
-display:block;
-position: fixed;
-z-index: -10;
-}
+
 
 /*===================
 	Slider CSS
@@ -486,6 +482,7 @@ body {
   height: 100%;
   
 }
+
 
 .carousel-inner {
   height: 100%;
@@ -589,6 +586,17 @@ body {
   animation-name: fadeInRight;
 }
 
+
+.carousel canvas {
+ position: absolute;
+ top: 0;
+ left: 0;
+ min-width: 100vw;
+ height: 100vh;
+ max-width: none;
+ object-fit:cover;
+ object-position:center;
+}
 
 /*
 	END SLIDESHOW CONTAINER
@@ -987,10 +995,15 @@ body {
 
 @media (max-width: 960px) and (min-width: 501px) {
     .PrimaryNav li { width: 50%; } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+
+
 }
 
 @media (max-width: 500px) {
     .PrimaryNav li { width: 100%; } /* On small screens, show one logo per row */
+    .carousel-caption h2 {font-size: 30px;}
+    #header .logo a {font-size: xx-small;}
+    .fill img {width: 400px; height: auto}
 }
 /*=======================*/
 /* END STYLING EVENT NAV */
