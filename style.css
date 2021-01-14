@@ -1002,8 +1002,6 @@ body {
 @media (max-width: 500px) {
     .PrimaryNav li { width: 100%; } /* On small screens, show one logo per row */
     .carousel-caption h2 {font-size: 30px;}
-    #header .logo a {font-size: xx-small;}
-    .fill img {width: 400px; height: auto}
 }
 /*=======================*/
 /* END STYLING EVENT NAV */
