@@ -842,10 +842,10 @@ body {
 #Services .single-service:hover{
 	box-shadow: 0px 0px 10px #fff;
 	z-index: 999;
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);   
-    -moz-transform: scale(1.15);
-    transform: scale(1.15);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);   
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 30px;
