@@ -34,20 +34,6 @@
 		<!-- Color CSS -->
 		<!--link rel="stylesheet" href="css/color/color7.css" -->
 		<link rel="stylesheet" href="css/color/color2.css">
-		<!--<link rel="stylesheet" href="css/color/color2.css">-->
-		<!--<link rel="stylesheet" href="css/color/color3.css">-->
-		<!--<link rel="stylesheet" href="css/color/color4.css">-->
-		<!--<link rel="stylesheet" href="css/color/color5.css">-->
-		<!--<link rel="stylesheet" href="css/color/color6.css">-->
-		<!--<link rel="stylesheet" href="css/color/color8.css">-->
-		<!--<link rel="stylesheet" href="css/color/color9.css">-->
-		<!--<link rel="stylesheet" href="css/color/color10.css">-->
-		<!--<link rel="stylesheet" href="css/color/color11.css">-->
-		<!--<link rel="stylesheet" href="css/color/color12.css">-->
-		<!--<link rel="stylesheet" href="css/color/color13.css">-->
-		<!--<link rel="stylesheet" href="css/color/color14.css">-->
-		<!--<link rel="stylesheet" href="css/color/color15.css">-->
-		<!--<link rel="stylesheet" href="css/color/color16.css">-->
 
 		<link rel="stylesheet" href="#" id="colors">
 		
@@ -117,7 +103,7 @@
 
   
 	  	<!-- Full Page Image Background Carousel Header -->
-	    <div id="home" class="carousel slide">
+	    <div id="home" class="carousel slide" >
 	        <!-- Indicators -->
 	        <ol class="carousel-indicators">
 	            <li data-target="#home" data-slide-to="0" class="active"></li>
@@ -126,7 +112,7 @@
 	        </ol>
 
 	        <!-- Wrapper for Slides -->
-	        <div class="carousel-inner">
+	        <div class="carousel-inner" style="background-color: #141E30; background-image: url('img/3363_res.jpg'); background-size:cover; background-blend-mode: lighten;">
 	            <div class="item active" >
 	                <!-- Set the first background image using inline CSS below. -->
 		           	 <div class="carousel-caption">
@@ -140,7 +126,7 @@
 	                <div class="fill" >
 						<div id="particles-js" width="100%" height="100%">
 		               		<canvas 
-							   style="position:absolute; width: 100%; height: 100%; background-color: #141E30; background-image: url('img/3363.jpg'); opacity: 0.3; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
+							   style="position:absolute; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
 							</canvas>
 						</div>
 					</div>
@@ -153,19 +139,36 @@
 						</h2>
 	                     <p class="animated fadeInUp"><a href="./register.html" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()">Register</a></p>
 	                </div>
-	                <div class="fill" >
+	                <div class="fill upcome" style="">
 						
+							<!--img src="img/WebinarPoster2.png" style="width: 80%; height: 80%; background-size: cover; background-position: 20% 20%; background-image: url('img/morocco2.png'); " -->
+						<div class="row carousel-upcoming">
+							<div class="col-md-6 col-sm-12 col-xs-12" style="margin-left: 50px; margin-right: 50px; margin-top: 70px">
 
-							<img src="img/WebinarPoster2.png" style="width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; background-image: url('img/morocco2.png'); ">
-		               		
-						
+								<br/><br/>
+								<p style=" font-size: x-large; color:#fff"> <span style="font-weight: bold;">Rethinking Self-Attention: Towards Interpretability for Neural Parsing <br/> Khalil Mrini </span> <br/> <br/> PhD student at NLP Group of University of California, San Diego </p>
+								<br/>
+								<p style="font-weight: bold; font-size: x-large; color:#fff">
+									<i class="fas fa-map-marker-alt"></i> &nbsp Online
+									<br/>
+									<i class="fas fa-calendar-day"></i> &nbsp January, 28<sup>th</sup>  2021
+									<br/>
+									<i class="far fa-clock"></i> &nbsp 8 PM (GMT+1)
+								</p>
+
+							</div>
+							<div style="text-align: right; align-items: right; vertical-align: middle; margin-right: 50px; margin-top: 50px; ">
+
+								<img src="img/khalil.jpg" width="25%" height="25%" style="border-radius: 50%; text-align: right; align-items: right; vertical-align: middle; margin-right: 50px; margin-top: 50px; " />
+							</div>
+						</div>
 					</div>
 	        	</div>
 				<!--  //////////////////////////////////////////  -->
 				<div class="item" >
 	                <!-- Set the first background image using inline CSS below. -->
 		           	 <div class="carousel-caption">
-	                     <p class="animated fadeInUp"><a href="http://morocco.ai/events/2019/04/29/IndabaXMorocco/" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()">Past Conferences</a></p>
+	                     <p class="animated fadeInUp"><a href="http://morocco.ai/events/2019/04/29/IndabaXMorocco/" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()" target="_blank">Past Conferences</a></p>
 	                </div>
 	                <div class="fill" >
 						
@@ -185,12 +188,15 @@
 		            <span class="icon-next"></span>
 		        </a>
 		    </div>
+
+		    <div style='clear: both;'></div>
+
 		</div>
 
 		
 		<!-- MoroccoAI Events -->
 		<section id="events" class="latest-works section">
-			<div class="container">
+			<div class="container" >
 				<div class="row">
 					<div class="col-md-12">
 						<div class="section-title">
@@ -203,7 +209,7 @@
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<!-- Project Nav -->
 						<div class="works-menu wow fadeInUp " data-wow-duration="0.6s" data-wow-delay="0.3s">
-							<ul class="PrimaryNav ">
+							<ul class="PrimaryNav">
 								<li class="Nav-item event_sel active" onclick="filterSelection('upcoming')" ><i class="fas fa-calendar-check"></i> Upcomming</li>
 								<li class="Nav-item event_sel" onclick="filterSelection('conferences')"><i class="fab fa-connectdevelop"></i> Conferences</li>
 								<li class="Nav-item event_sel" onclick="filterSelection('webinars')" ><i class='fas fa-video'></i> Webinars</li>
@@ -215,18 +221,28 @@
 				</div>
 
 				
-				<div class="upcoming filterDiv">	
-					<div class="row" style="max-height: 300px; "> 
+				<div class="upcoming filterDiv" style="back">
+
+					<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
+						<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
+							<center>
+							<img src="img/khalil.jpg" style="border-radius: 50%; width: 200px; height: 200px; vertical-align: middle;" />
+							</center>
+						</div>
+					</div> 
+					
+					<div class="row" style="max-height: 300px;"> 
 						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-							<div class="col-md-6 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
+							<div class="col-md-8 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
+								
 
 								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar Series</span>
 								</h3>
 								<br/><br/>
-								<p> <span style="font-weight: bold">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span>, by Khalil Mrini, a PhD student at NLP Group of University of California, San Diego</p>
+								<p> <span style="font-weight: bold; font-size: x-large; color:#000">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span> <br/> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego</p>
 								<br/>
-								<p style="font-weight: bold">
-									<i class="fas fa-map-marker-alt"></i> &nbsp Youtube/register Link
+								<p style="font-weight: bold;  font-size: large;">
+									<i class="fas fa-map-marker-alt"></i> &nbsp Online
 									<br/>
 									<i class="fas fa-calendar-day"></i> &nbsp January, 28<sup>th</sup>  2021
 									<br/>
@@ -241,17 +257,10 @@
 										
 									</div>
 								</div>
+
 							</div>
 						</div>
-						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-							<div class="col-md-6 col-sm-12 col-xs-12 img_event " style="text-align:center; ">
-								<div class="single-work single-service", style="border-radius: 25px">
-									<img src="img/WebinarPoster.png" />
-									<div class="works-hover">
-									</div>
-								</div>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 
@@ -282,16 +291,27 @@
 				<!-- END CONFERENCE SUB SECTION -->
 				
 				<!-- START WEBINARS SUB SECTION -->
-				<div class="webinars filterDiv">	
-					<div class="row" style="max-height: 300px; "> 
+
+				<!--   style="background-color: #fff; background-image: url('img/webinar_POST.png'); background-repeat: no-repeat; background-size: 25% 40%; padding-left: -20px; background-position: right center; "   -->
+
+				<div class="webinars filterDiv" >	
+
+					<div class="row" style="max-height: 300px;"> 
 						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-							<div class="col-md-6 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
-								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar Series</span>
-								</h3>
-								<br/><br/>
-								<p> <span style="font-weight: bold">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span>, by Khalil Mrini, a PhD student at NLP Group of University of California, San Diego</p>
+							<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
+								<center>
+								<img src="img/khalil.jpg" style="border-radius: 50%; width: 180px; height: 180px; vertical-align: middle;" />
+								</center>
+							</div>
+						</div> 
+						
+					
+						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
+							<div class="col-md-8 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
+
+								<p> <span style="font-weight: bold; font-size: x-large; color:#000">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span> <br/> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego</p>
 								<br/>
-								<p style="font-weight: bold">
+								<p style="font-weight: bold;  font-size: large;">
 									<i class="fas fa-map-marker-alt"></i> &nbsp Online
 									<br/>
 									<i class="fas fa-calendar-day"></i> &nbsp January, 28<sup>th</sup>  2021
@@ -304,19 +324,13 @@
 										<a href="./register.html" class="btn" style="color:#ED1C24;" onclick="toShow()">
 											Register Here
 										</a>
+										
 									</div>
 								</div>
+
 							</div>
 						</div>
-						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-							<div class="col-md-6 col-sm-12 col-xs-12 img_event " style="text-align:center; ">
-								<div class="single-work single-service", style="border-radius: 25px">
-									<img src="img/WebinarPoster.png" />
-									<div class="works-hover">
-									</div>
-								</div>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 					

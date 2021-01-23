@@ -982,12 +982,12 @@ body {
 	background: -webkit-linear-gradient(to right, #243B55, #141E30); 
 	background: linear-gradient(to right, #243B55, #141E30); 
 	opacity:0.9; 
-	 padding: 5px 10px;
-
-    
+	padding: 5px 10px;
 	/* background: -webkit-linear-gradient(to right, #243B55, #141E30);  
 	background: linear-gradient(to right, #243B55, #141E30); */
 }
+
+
 .PrimaryNav {
 	padding-top: 10px;
 	padding-bottom: 50px;
@@ -1002,6 +1002,9 @@ body {
 @media (max-width: 500px) {
     .PrimaryNav li { width: 100%; } /* On small screens, show one logo per row */
     .carousel-caption h2 {font-size: 30px;}
+    .carousel-upcoming p  {font-size: 20px;}
+    .carousel-upcoming {margin-top: 0;}
+    .carousel-upcoming img{text-align: center; align-items: center; margin-top: 0; width:50px; height: auto}
 }
 /*=======================*/
 /* END STYLING EVENT NAV */
