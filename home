@@ -39,31 +39,6 @@
 		
     </head>
     <body>
-		<!--div class="color-plate ">
-			<a class="icon"><i class="fa fa-cog fa-spin"></i></a>
-			<h2>Ruby Color</h2>
-			<div class="color-head">
-				<span class="color1"></span>
-				<span class="color2"></span>
-				<span class="color3"></span>
-				<span class="color4"></span>
-				<span class="color5"></span>
-				<span class="color6"></span>
-				<span class="color7"></span>
-				<span class="color8"></span>
-				<span class="color9"></span>
-				<span class="color10"></span>
-				<span class="color11"></span>
-				<span class="color12"></span>
-				<span class="color13"></span>
-				<span class="color14"></span>
-				<span class="color15"></span>
-				<span class="color16"></span>
-				<span class="color17"></span>
-				<span class="color18"></span>
-
-			</div>
-		</div --> 
 		
 		<!-- Header Area -->
 		<header id="header" class="header navbar-header-wrapper">
@@ -248,9 +223,9 @@
 								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar Series</span>
 								</h3>
 								<br/><br/>
-								<p> <span style="font-weight: bold; font-size: x-large; color:#000">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span> <br/> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego</p>
+								<p> <span style="font-weight: bold; font-size: large; color:#000">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span> <br/> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego</p>
 								<br/>
-								<p style="font-weight: bold;  font-size: large;">
+								<p style="font-weight: bold;  font-size: medium;">
 									<i class="fas fa-map-marker-alt"></i> &nbsp Online
 									<br/>
 									<i class="fas fa-calendar-day"></i> &nbsp January, 28<sup>th</sup>  2021
@@ -355,9 +330,9 @@
 						<div class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s">
 							<div class="col-md-8 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
 
-								<p> <span style="font-weight: bold; font-size: x-large; color:#000">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span> <br/> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego</p>
+								<p> <span style="font-weight: bold; font-size: large; color:#000">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span> <br/> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego</p>
 								<br/>
-								<p style="font-weight: bold;  font-size: large;">
+								<p style="font-weight: bold;  font-size: medium;">
 									<i class="fas fa-map-marker-alt"></i> &nbsp Online
 									<br/>
 									<i class="fas fa-calendar-day"></i> &nbsp January, 28<sup>th</sup>  2021
