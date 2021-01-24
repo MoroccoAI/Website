@@ -500,6 +500,35 @@ body {
 
 }
 
+.carDescr {
+	padding-bottom: 80px;
+  padding-top: 150px;
+  max-width: 100%;
+	width:100%;
+	left: 0;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+
+.carDescr h1 {
+	 font-size: 65px;
+	 padding-top: -10px;
+
+}
+
+@media (max-width: 500px) {
+    .fill { padding-bottom: 20px; padding-top: -100px; }
+    .carDescr h1 {font-size: 30px;}
+    .upcome h2 {font-size: 25px;}
+    .upcome p {font-size: 20px;}
+    .carousel-caption {padding-top: 300px;}
+}
+
+
+
+
+
 .carousel-caption h2 {
   font-size: 50px;
 }
@@ -518,9 +547,10 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  opacity: 0.6;
-  background: #141E30;
+  
 }
+
+
 
 /**
  * Button
@@ -1002,9 +1032,6 @@ body {
 @media (max-width: 500px) {
     .PrimaryNav li { width: 100%; } /* On small screens, show one logo per row */
     .carousel-caption h2 {font-size: 30px;}
-    .carousel-upcoming p  {font-size: 20px;}
-    .carousel-upcoming {margin-top: 0;}
-    .carousel-upcoming img{text-align: center; align-items: center; margin-top: 0; width:50px; height: auto}
 }
 /*=======================*/
 /* END STYLING EVENT NAV */
