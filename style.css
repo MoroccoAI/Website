@@ -331,13 +331,10 @@ a:hover{
 
 .header .logo {
 	float: left;
-	padding: 15px 10px;
+	padding: 10px 10px;
 	
 	/*padding-top: 20px; */
 }
-
-
-
 
 .logo:hover{
 	background-color:transparent;
@@ -513,13 +510,25 @@ body {
 
 .carDescr h1 {
 	 font-size: 65px;
-	 padding-top: -10px;
+	 padding-top: 0px;
 
 }
 
+.slider_upImg{
+	margin-top: 100px;
+}
+
+.slider_upImg img {
+	border-radius:50%; 
+	width: 200px; 
+	height: 200px; 
+	vertical-align: middle;
+} 
+
 @media (max-width: 500px) {
-    .fill { padding-bottom: 20px; padding-top: -100px; }
-    .carDescr h1 {font-size: 30px;}
+    .fill { padding-bottom: 20px; padding-top: -80px; margin-top: 20px;}
+    .carDescr h1 {font-size: 30px; padding-top: -80px;}
+    .slider_upImg img{width: 120px; height: 120px; border-radius: 50%;}
     .upcome h2 {font-size: 25px;}
     .upcome p {font-size: 20px;}
     .carousel-caption {padding-top: 300px;}
@@ -1025,8 +1034,6 @@ body {
 
 @media (max-width: 960px) and (min-width: 501px) {
     .PrimaryNav li { width: 50%; } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
-
-
 }
 
 @media (max-width: 500px) {
