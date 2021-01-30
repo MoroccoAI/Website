@@ -80,11 +80,11 @@
 	  	<!-- Full Page Image Background Carousel Header -->
 	    <div id="home" class="carousel slide" >
 	        <!-- Indicators -->
-	        <ol class="carousel-indicators">
+	        <ol class="carousel-indicators" style="bottom:-10px;">
 	            <li data-target="#home" data-slide-to="0" class="active"></li>
 	            <li data-target="#home" data-slide-to="1"></li>
 				<li data-target="#home" data-slide-to="2"></li>
-				<br/> <br/>  <a style=" position: relative; bottom:-20px; text-align:center; font-size: small; opacity:0.6;" href="http://www.freepik.com" target="_blank">Background designed by macrovector / Freepik</a>
+				<br/>  <a style=" position: relative;  text-align:center; font-size: small; opacity:0.6;" href="http://www.freepik.com" target="_blank">Background designed by macrovector / Freepik</a>
 	        </ol>
 
 	        <!-- Wrapper for Slides -->
@@ -111,10 +111,10 @@
 				<!-- //////////////////////////////////////////-->
 				<div class="item" >
 	                <!-- Set the first background image using inline CSS below. -->
-		           	 <div class="carousel-caption webcaption">
+		           	 <div class="carousel-caption ">
 	                    <h2 class="animated fadeInLeft" style="align: right; font-family: Open Sans; font-weight: bold">Webinar<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">Series</span>
 						</h2>
-	                     <p class="animated fadeInUp"><a href="./register.html" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()">Register</a></p>
+	                     
 	                </div>
 
 	                <div class="fill carDescr slider_upImg" style="">
@@ -123,6 +123,8 @@
 						<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
 								<center>
 								<img src="img/khalil.jpg" />
+								<br/>
+								
 								</center>
 						</div> 
 					
@@ -136,7 +138,9 @@
 								<br/>
 								<p style="color:#fff"> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego
 								</p>
-								<br/>
+								
+								<a href="https://twitter.com/KhalilMrini" style="font-size: 20px;" target="_blank"><i class="fab fa-twitter"></i>@KhalilMrini</a>
+								<br/><br/>
 								<p style="font-weight: bold;  font-size: large; color:#fff">
 									<i class="fas fa-map-marker-alt"></i> &nbsp Online
 									<br/>
@@ -144,6 +148,7 @@
 									<br/>
 									<i class="far fa-clock"></i> &nbsp 8 PM (GMT+1)
 								</p>
+								<div class="animated fadeInUp"><a href="./register.html" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()">Register</a></div>
 							</div>
 							
 						</div>
@@ -153,11 +158,13 @@
 				<div class="item" style="">
 	                <!-- Set the first background image using inline CSS below. -->
 		           	 <div class="carousel-caption">
+		           	 	<h2 class="animated fadeInLeft" style="align: right; font-family: Open Sans; font-weight: bold"><span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">Conferences</span>
+						</h2>
 	                     <p class="animated fadeInUp"><a href="https://morocco.ai/events/2019/04/29/IndabaXMorocco/" id="reg_btn" class="btn btn-transparent btn-rounded btn-large" onclick="toShow()" target="_blank">Past Conferences</a></p>
 	                </div>
 	                <div class="fill carDescr">
 
-							<img src="img/logo_indaba.png" style="width: 40%; margin-bottom: 50px; padding-top: 100px;" >
+							<img src="img/logo_indaba.png" style="width: 40%; margin-bottom: 50px; padding-top: 70px;" >
       						<h1 class="" style="font-family: Open Sans; font-weight: bold; color: #fff;">DEEP LEARNING <br><span style="color:#f82249">IndabaX Morocco </span> 
       						</h1>
 		               		<!--canvas 
@@ -209,21 +216,22 @@
 
 				
 				<div class="upcoming filterDiv" style="back">
-
-					<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-						<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
-							<center>
-							<img src="img/khalil.jpg" style="border-radius: 50%; width: 200px; height: 200px; vertical-align: middle;" />
-							</center>
-						</div>
-					</div> 
 					
 					<div class="row" style="max-height: 300px;"> 
+
+						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
+							<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
+								<center>
+								<img src="img/khalil.jpg" style="border-radius: 50%; width: 200px; height: 200px; vertical-align: middle;" />
+								</center>
+							</div>
+						</div> 
+
 						<div class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s">
-							<div class="col-md-8 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
+							<div class="col-md-5 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
 								
 
-								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar Series</span>
+								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar</span> <span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">Series</span>
 								</h3>
 								<br/><br/>
 								<p> <span style="font-weight: bold; font-size: large; color:#000">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span> <br/> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego</p>
@@ -235,18 +243,42 @@
 									<br/>
 									<i class="far fa-clock"></i> &nbsp 8 PM (GMT+1)
 								</p>
-								<div class="button-head" id="reg_btn">
+								<div class="button-head upcoming_butt" id="reg_btn">
 									<div class="button join_btn" >
 										<span></span>
 										<a href="./register.html" class="btn" style="color:#ED1C24; font-weight: bold" onclick="toShow()"> <i class="fab fa-wpforms" aria-hidden="true"></i> Register
 										</a>
-										
+									</div>
+								</div>
+								<div class="button-head upcoming_butt" id="reg_btn">
+									<div class="button join_btn" >
+										<span></span>
+										<a class="btn" style="color:#ED1C24; font-weight: bold" onclick="toShowAbs()"> Show Abstract
+										</a>
 									</div>
 								</div>
 
+								<!--div class="button-head upcoming_butt" id="reg_btn">
+									<div class="button join_btn" >
+										<span></span>
+										<a class="btn" style="color:#ED1C24; font-weight: bold" href="Calendar/MoroccoAI Webinar.ics">Add to Calendar</a>
+									</div>
+								</div-->
+
 							</div>
 						</div>
-						
+						<div class="col-md-4 col-sm-12 col-xs-12  " id="abstract" style="overflow-y: auto; max-height: 350px; display: none; margin-left: -5px; margin-right: 5px; margin-top: 5px; box-shadow: 0 0 5px 10px #D3D3D3; border-radius: 15px 50px; background: #D3D3D3; padding: 2%;">
+
+							<div class="abst_p" style="min-height: 310px;color:#000; overflow-y: hidden; text-align: center; padding-bottom: 5px;">
+								<h3 style="font-weight: bold; text-align: center; font-family: 'Product Sans">ABSTRACT</h3> <br/>
+								
+								Attention mechanisms have improved the performance of NLP tasks while 
+								allowing models to remain explainable. Self-attention is currently widely used; however, interpretability is difficult due to the numerous attention distributions. Recent work has shown that model representations can benefit from label-specific information while facilitating interpretation of predictions. We introduce the Label Attention Layer, a new form of self-attention where attention heads represent labels. We test our novel approach by running constituency and dependency parsing experiments on the Penn Treebank (PTB) and the Chinese Treebank (CTB) datasets. The new proposed model achieves state-of-the-art results for both tasks. Moreover, our model requires fewer self-attention layers compared to existing models. Finally, we share our findings that Label Attention heads can learn relations between syntactic categories and show pathways to analyze errors.
+	 							
+							</div>
+
+							
+						</div>
 					</div>
 				</div>
 
@@ -384,7 +416,7 @@
 						<div class="section-title">
 							<h2 style="color:#fff">About US</h2>
 							<!--p>MoroccoAI brings together researchers and professionals to empower Morocco’s presence in Artificial Intelligence</p-->
-							<p>MoroccoAI is an initiative powered by volunteers to strengthen the AI community in Morocco</p>
+							<p>MoroccoAI is an initiative led by AI experts in Morocco and abroad to promote AI growth in Morocco across the spectrum</p>
 						</div>
 					</div>
 				</div>
@@ -393,14 +425,14 @@
 						<div class="single-service" style="min-height: 310px ">
 							<i class="fas fa-eye" aria-hidden="true"></i>
 							<h3>Vision</h3>
-							<p>Build a leading professional Moroccan Artificial Intelligence network to empower Morocco's presence in Artificial Intelligence, and promote excellence in Artificial Intelligence education, research and innovation </p>
+							<p>Empower AI transformation in Morocco and connect AI professionals </p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.5s">
 						<div class="single-service" style="min-height: 310px ">
 							<i class="fas fa-bullseye" aria-hidden="true"></i>
 							<h3>Mission</h3>
-							<p>Our mission is to support Artificial Intelligence researchers and practitioners in Morocco, empower Moroccan Artificial Intelligence practitioners with cutting-edge advancements in AI, and to provide opportunities for Moroccan students and practitioners </p>
+							<p>We promote excellence in AI education and research. We partner with universities and industry to drive innovation and build AI-enabled solutions. We foster aspirational efforts in AI for Morocco’s socially beneficial purposes </p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.6s">
@@ -410,6 +442,7 @@
 							<p>We strive to uphold the guiding principles that make us who we are and shape where we’re headed </p>
 							<br>
 							<ul style="list-style-type:circle !important;color:#ED1C24;line-height:70%;margin-top:-5px"> <br><li> <p ><b>Diversity</b> and <b>Inclusion</b></p></li><br>  <li><p><b>Education</b> and <b>Innovation</b></p></li><br> 
+								<li><p><b>Creativity</b></p></li>
 							</ul>
 						</div>
 					</div>
@@ -968,13 +1001,13 @@
 
 		<!-- BEGIN REGISTER FORM -->
 
-		<section class="register_form" id="gform" style="display: none;">
+		<!--section class="register_form" id="gform" style="display: none;">
 			
 			<div id="reg_form" style="width: 100%; height: 50%; ">
 				<iframe id="frame"  src="https://docs.google.com/forms/d/e/1FAIpQLSceZJ7dBWazjXhwqeEnr7l-uACEGQpVnKvh9HMj5BHWBFe9bA/viewform?embedded=true&widget=false&headers=false&chrome=false" width="640" height="2339" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height: 400px; ">Loading…</iframe>
 			</div>
 
-		</section>
+		</section-->
 
 	
 		
@@ -985,10 +1018,11 @@
 		<!-- Footer Area -->
 		<footer id="footer" class="footer section" style="background: #141E30; 
 								background: -webkit-linear-gradient(to right, #243B55, #141E30); 
-								background: linear-gradient(to right, #243B55, #141E30); opacity:0.9;">
+								background: linear-gradient(to right, #243B55, #141E30); opacity:0.9;
+								margin-top: -50px; margin-bottom: -120px;">
 			<!-- Footer Top -->
-			<div class="footer-top">
-				<div class="container">
+			<div class="footer-top" >
+				<div class="container" style="padding-top: 20px; margin-bottom: -50px;" >
 					<div class="row">
 						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="single-footer">
@@ -1139,6 +1173,13 @@
 		  var iframe = document.getElementById('gform');
 		  iframe.style.display = 'block';
 		}
+
+		function toShowAbs() {
+		  var iframe = document.getElementById('abstract');
+		  iframe.style.display = 'block';
+		}
+
+		
     </script>
 	<!-- END FORM Script -->
 
