@@ -847,6 +847,22 @@ body {
 .addToCalendar:active {position:relative;top:1px;}
 
 
+.addtocal {
+ display: inline-block;
+  background-color: #FF4041;
+  border: 2px solid #FF4041;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: sans-serif;
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #FF4041;
+    color: #FF4041;
+  } 
+}
+
 /*=========================
 	services CSS
 ===========================*/
