@@ -36,6 +36,16 @@
 		<link rel="stylesheet" href="css/color/color2.css">
 
 		<link rel="stylesheet" href="#" id="colors">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J68VB3LFF"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-0J68VB3LFF');
+		</script>
 		
     </head>
     <body>
@@ -281,6 +291,15 @@
 										</a>
 									</div>
 								</div>
+
+								<!--div class="button-head upcoming_butt" id="reg_btn">
+									<div class="button join_btn" >
+										<span></span>
+										<a class="btn" style="color:#ED1C24; font-weight: bold" target='_blank' href='https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NzlmdXM5NzFvMzBuaTFiMGQ3cXZrOWU4am4gbW9yb2Njb2RvdGFpQG0&amp;tmsrc=moroccodotai%40gmail.com'><img border='0' src="img/GCal.png" width="30px" height="30px">Add to Calendar</a>
+									</div>
+								</div -->
+
+
 								<!--div class="button-head upcoming_butt" id="reg_btn">
 									<div class="button join_btn" >
 										<span></span>
@@ -519,7 +538,7 @@
 						<div class="single-service" style="min-height: 310px ">
 							<i class="fas fa-eye" aria-hidden="true"></i>
 							<h3>Vision</h3>
-							<p>Empower AI transformation in Morocco and connect AI professionals </p>
+							<p>Empower AI transformation in Morocco and connect today’s and tomorrow’s AI leaders</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.5s">
@@ -535,8 +554,10 @@
 							<h3>Values</h3>
 							<p>We strive to uphold the guiding principles that make us who we are and shape where we’re headed </p>
 							<br>
-							<ul style="list-style-type:circle !important;color:#ED1C24;line-height:70%;margin-top:-5px"> <br><li> <p ><b>Diversity</b> and <b>Inclusion</b></p></li><br>  <li><p><b>Education</b> and <b>Innovation</b></p></li><br> 
-								<li><p><b>Creativity</b></p></li>
+							<ul style="list-style-type:circle !important;color:#ED1C24;line-height:70%;margin-top:-5px"> <br>
+								<li> <p ><b>Diversity</b> and <b>Inclusion</b></p></li><br>  
+								<li><p><b>Stewardship</b> and <b>Integrity</b></p></li><br> 
+								<li><p><b>Creativity</b> and <b>Innovation</b></p></li><br> 
 							</ul>
 						</div>
 					</div>
@@ -1209,8 +1230,7 @@
 		function updateVisitCount() {
 			fetch('https://api.countapi.xyz/hit/www.morocco.ai')
 				.then(res => res.json())
-				.then(res => {
-					countEl.innerHTML = res.value;
+				.then(res => {countEl.innerHTML = res.value;
 				})
 		}
 	</script>
