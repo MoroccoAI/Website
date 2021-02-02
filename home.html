@@ -378,18 +378,22 @@
 				<div class="webinars filterDiv" >	
 
 					<div class="row" style="max-height: 300px;"> 
+
 						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
 							<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
 								<center>
-								<img src="img/khalil.jpg" style="border-radius: 50%; width: 180px; height: 180px; vertical-align: middle;" />
+								<img src="img/khalil.jpg" style="border-radius: 50%; width: 200px; height: 200px; vertical-align: middle;" />
 								</center>
 							</div>
 						</div> 
-						
-					
-						<div class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s">
-							<div class="col-md-8 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
 
+						<div class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s">
+							<div class="col-md-5 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
+								
+
+								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar</span> <span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">Series</span>
+								</h3>
+								<br/><br/>
 								<p> <span style="font-weight: bold; font-size: large; color:#000">Rethinking Self-Attention: Towards Interpretability for Neural Parsing</span> <br/> <b style="font-size: large;">Khalil Mrini</b> - PhD student at NLP Group of University of California, San Diego</p>
 								<br/>
 								<p style="font-weight: bold;  font-size: medium;">
@@ -398,11 +402,48 @@
 									<i class="fas fa-calendar-day"></i> &nbsp February, 10<sup>th</sup>  2021
 									<br/>
 									<i class="far fa-clock"></i> &nbsp 6 PM (GMT+1)
+									<br/>
 								</p>
+								<!--a class="addtocal" href="Calendar/MoroccoAI Webinar.ics" download="MoroccoAI Webinar.ics">Add to calendar</a-->
+
+
+								<div class="button-head upcoming_butt" id="reg_btn">
+									<div class="button join_btn" >
+										<span></span>
+										<a href="./register.html" class="btn" style="color:#ED1C24; font-weight: bold" onclick="toShow()"> <i class="fab fa-wpforms" aria-hidden="true"></i> Register
+										</a>
+									</div>
+								</div>
+								<div class="button-head upcoming_butt" id="reg_btn">
+									<div class="button join_btn" >
+										<span></span>
+										<a class="btn" style="color:#ED1C24; font-weight: bold" onclick="toShowAbs_2()"> Show Abstract
+										</a>
+									</div>
+								</div>
+
+
+								<!--div class="button-head upcoming_butt" id="reg_btn">
+									<div class="button join_btn" >
+										<span></span>
+										<a class="btn" style="color:#ED1C24; font-weight: bold" href="Calendar/MoroccoAI Webinar.ics">Add to Calendar</a>
+									</div>
+								</div-->
 
 							</div>
 						</div>
-						
+						<div class="col-md-4 col-sm-12 col-xs-12  " id="abstract_web_sect" style="overflow-y: auto; max-height: 350px; display: none; margin-left: -5px; margin-right: 5px; margin-top: 5px; box-shadow: 0 0 5px 10px #D3D3D3; border-radius: 15px 50px; background: #D3D3D3; padding: 2%;">
+
+							<div class="abst_p" style="min-height: 310px;color:#000; overflow-y: hidden; text-align: center; padding-bottom: 5px;">
+								<h3 style="font-weight: bold; text-align: center; font-family: 'Product Sans">ABSTRACT</h3> <br/>
+								
+								Attention mechanisms have improved the performance of NLP tasks while 
+								allowing models to remain explainable. Self-attention is currently widely used; however, interpretability is difficult due to the numerous attention distributions. Recent work has shown that model representations can benefit from label-specific information while facilitating interpretation of predictions. We introduce the Label Attention Layer, a new form of self-attention where attention heads represent labels. We test our novel approach by running constituency and dependency parsing experiments on the Penn Treebank (PTB) and the Chinese Treebank (CTB) datasets. The new proposed model achieves state-of-the-art results for both tasks. Moreover, our model requires fewer self-attention layers compared to existing models. Finally, we share our findings that Label Attention heads can learn relations between syntactic categories and show pathways to analyze errors.
+	 							
+							</div>
+
+							
+						</div>
 					</div>
 				</div>
 					
@@ -1204,6 +1245,10 @@
 		  iframe.style.display = 'block';
 		}
 
+		function toShowAbs_2() {
+		  var iframe = document.getElementById('abstract_web_sect');
+		  iframe.style.display = 'block';
+		}
 		
     </script>
 
