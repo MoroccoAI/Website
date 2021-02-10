@@ -938,8 +938,13 @@ body {
 /*=========================
 	End services CSS
 ===========================*/
+.upcome_Yout a{
+	color:#333;
+}
 
-
+.upcome_Yout a:hover{
+	color: #ED1C24;
+}
 
 /*===================
 	Latest Works CSS
