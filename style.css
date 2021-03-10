@@ -954,6 +954,17 @@ body {
 	color: #ED1C24;
 }
 
+
+.eventBlock{
+	background: url('img/MAP-dotted-1.png') no-repeat 97% center;
+	background-position: -webkit-calc(100% - 10px) center; /* Sf 6 */
+	background-position: right 10px center; /* Cr 25+, FF 13+, IE 9+, Op 10.5+ */
+	background-size: 500px auto;
+	opacity: 0.3;
+	z-index: -999
+
+}
+
 /*===================
 	Latest Works CSS
 =====================*/
