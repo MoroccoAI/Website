@@ -1095,7 +1095,9 @@ body {
 @media (max-width: 500px) {
     .PrimaryNav li { width: 100%; } /* On small screens, show one logo per row */
     .carousel-caption h2 {font-size: 30px;}
-    .event_buttons .elem {text-align: center;}
+    .elem {text-align: center;}
+    .elem {margin-right: 10px;}
+    .single-service {padding-left: 30px;}
 }
 /*=======================*/
 /* END STYLING EVENT NAV */
