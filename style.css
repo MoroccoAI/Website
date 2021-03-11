@@ -1097,6 +1097,7 @@ body {
     .carousel-caption h2 {font-size: 30px;}
     .elem {text-align: center;}
     .elem {margin-right: 10px; margin-left: 5px;}
+    .event_buttons {margin-right: -10px;}
     .single-service {padding-left: 30px;}
 }
 /*=======================*/
