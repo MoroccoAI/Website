@@ -1122,9 +1122,10 @@ background-color: #fff; // Must Match Page Background
     .PrimaryNav li { width: 100%; } /* On small screens, show one logo per row */
     .carousel-caption h2 {font-size: 30px;}
     .elem {text-align: center;}
-    .elem {margin-right: 5px; margin-left: 5px;}
-    .two_but {margin-left: -40px;}
+    .elem {margin-right: 20px; }
     .single-service {padding-left: 30px;}
+    .divider{ width:15px; }
+    .web_tab {margin-left: -30px; width: 100%;}
 }
 /*=======================*/
 /* END STYLING EVENT NAV */
@@ -1418,6 +1419,13 @@ background-color: #fff; // Must Match Page Background
 }
 .container {
   overflow: hidden;
+}
+
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
 }
 
 /*=======================
