@@ -1096,7 +1096,7 @@ body {
     .PrimaryNav li { width: 100%; } /* On small screens, show one logo per row */
     .carousel-caption h2 {font-size: 30px;}
     .elem {text-align: center;}
-    .elem {margin-right: 10px;}
+    .elem {margin-right: 10px; margin-left: 5px;}
     .single-service {padding-left: 30px;}
 }
 /*=======================*/
