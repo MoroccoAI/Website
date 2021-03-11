@@ -11,6 +11,8 @@
 
 ;( function( $, window, undefined ) {
 	
+	preventDefaultEvents: false;
+	
 	'use strict';
 
 	/*
