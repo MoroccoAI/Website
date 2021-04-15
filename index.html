@@ -84,7 +84,7 @@
 		<!-- Header Area -->
 		<header id="header" class="header navbar-header-wrapper">
 			<!-- Header Inner -->
-			<div class="header-inner" > <!-- style="background-color: #1A2A3F;" -->
+			<div class="header-inner" style="height: 80px;"> <!-- style="background-color: #1A2A3F;" -->
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-sm-2 col-xs-2">
@@ -94,8 +94,8 @@
 						</div>
 						<div class="col-md-9 col-sm-10">
 							<div class="mobile-menu"></div>
-							<nav class="navbar navbar-default">
-								<div class="collapse navbar-collapse ">
+							<nav class="navbar navbar-default"  style="margin-bottom: -50px !important;padding-bottom: : -50px !important;">
+								<div class="collapse navbar-collapse " >
 									<ul id="nav" class="nav navbar-nav" style="font-weight: bold">
 										<li class="current">
 											<a href="#home">Home</a>
@@ -115,11 +115,11 @@
 			</div>
 		</header>
 		<!--/ End Header Area -->
-
+		
 
   
 	  	<!-- Full Page Image Background Carousel Header -->
-	    <div id="home" class="carousel slide" >
+	    <div id="home" class="carousel slide" data-interval="3000">
 	        <!-- Indicators -->
 	        <ol class="carousel-indicators" style="bottom:-10px;">
 	            <li data-target="#home" data-slide-to="0" class="active"></li>
@@ -1314,9 +1314,10 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="single-footer">
-								<div class="logo" style="margin-bottom: -70px; margin-left: -50px;">
+								<div class="logo" style="margin-bottom: -70px; margin-left: -50px; margin-right: 200px;">
 									<a href="index.html"><img src="img/LOGO_v1.png" alt="img/LOGO_v1.png"></a>
 								</div>
+								<br/>
 								<p> </p>
 								<div class="contact">
 									<p class="location" style="font-size:medium"><i class="fas fa-map-marker" aria-hidden="true"></i>Morocco</p>
@@ -1405,6 +1406,16 @@
 				.then(res => {countEl.innerHTML = res.value;
 				})
 		}
+	</script>
+
+	<script>
+		
+		$(document).ready(function($) { 
+    		$('#header').slicknav({
+        	prependTo:'#menu-mobile'
+    });
+});
+
 	</script>
 
 	<script>

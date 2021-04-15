@@ -209,7 +209,9 @@
 		// autoslide feature: true || false
 		// automatically loops through the carousel (after hitting the end of the list goes back to front)
 		// disabled by default
-		autoSlide: false,
+		autoSlide: true,
+
+		cycle : true,
 		// autoslide delay time, specifies time interval between autoslide steps (in milliseconds)
 		// 3000ms by default
 		delayTime: 3000,
