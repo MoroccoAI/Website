@@ -308,8 +308,7 @@ a:hover{
 	z-index:99999;
 	background: #141E30;  
 	background: -webkit-linear-gradient(to right, #243B55, #141E30);  
-	background: linear-gradient(to right, #243B55, #141E30);
-	height: 0px;	
+	background: linear-gradient(to right, #243B55, #141E30);	
 }
 
 .header .navbar-collapse{
@@ -330,6 +329,19 @@ a:hover{
 	
 }
 
+.header .logo {
+	float: left;
+	padding-top: 20px;
+}
+.header .navbar {
+	background: none;
+	box-shadow: none;
+	border: none;
+	margin: 0;
+	height: 0px;
+	min-height: 0px;
+	float: right;
+}
 
 .logo{ width:300px;height:150px;text-align:center; 
 		display: block;
@@ -367,8 +379,6 @@ a:hover{
   	position: relative;
   	text-decoration: none;
   	
-  	
-
 }
 .header .nav li:last-child{
 	margin:0;
