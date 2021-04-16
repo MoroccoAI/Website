@@ -331,7 +331,7 @@ a:hover{
 
 .header .logo {
 	float: left;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .header .navbar {
 	background: none;
@@ -1138,7 +1138,7 @@ background-color: #fff; // Must Match Page Background
 
 @media (max-width: 500px) {
     .PrimaryNav li { width: 100%; height: auto;} /* On small screens, show one logo per row */
-
+    .logo img { width: 150px; height: auto; vertical-align: top; margin-left: -100px; padding-top: 0}
     .carousel-caption h2 {font-size: 30px;}
     .elem {text-align: center;}
     .elem {margin-right: 20px; }
