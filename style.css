@@ -1139,7 +1139,7 @@ background-color: #fff; // Must Match Page Background
 
 @media (max-width: 500px) {
     .PrimaryNav li { width: 100%; height: auto;} /* On small screens, show one logo per row */
-    .logo img { width: 110px; height: auto; vertical-align: top; margin-left: -100px; margin-top: -5px}
+    .logo img { width: 150px; height: auto; vertical-align: top; margin-left: -100px; margin-top: -5px}
     .carousel-caption h2 {font-size: 30px;}
     .elem {text-align: center;}
     .elem {margin-right: 20px; }
