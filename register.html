@@ -1,13 +1,6 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0J68VB3LFF"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-0J68VB3LFF');
-    </script>
     
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -51,20 +44,6 @@
     <!-- Color CSS -->
     <!--link rel="stylesheet" href="css/color/color7.css" -->
     <link rel="stylesheet" href="css/color/color2.css" />
-    <!--<link rel="stylesheet" href="css/color/color2.css">-->
-    <!--<link rel="stylesheet" href="css/color/color3.css">-->
-    <!--<link rel="stylesheet" href="css/color/color4.css">-->
-    <!--<link rel="stylesheet" href="css/color/color5.css">-->
-    <!--<link rel="stylesheet" href="css/color/color6.css">-->
-    <!--<link rel="stylesheet" href="css/color/color8.css">-->
-    <!--<link rel="stylesheet" href="css/color/color9.css">-->
-    <!--<link rel="stylesheet" href="css/color/color10.css">-->
-    <!--<link rel="stylesheet" href="css/color/color11.css">-->
-    <!--<link rel="stylesheet" href="css/color/color12.css">-->
-    <!--<link rel="stylesheet" href="css/color/color13.css">-->
-    <!--<link rel="stylesheet" href="css/color/color14.css">-->
-    <!--<link rel="stylesheet" href="css/color/color15.css">-->
-    <!--<link rel="stylesheet" href="css/color/color16.css">-->
 
     <link rel="stylesheet" href="#" id="colors" />
 
@@ -72,30 +51,6 @@
 
   </head>
   <body>
-    <!--div class="color-plate">
-      <a class="icon"><i class="fa fa-cog fa-spin"></i></a>
-      <h2>Ruby Color</h2>
-      <div class="color-head">
-        <span class="color1"></span>
-        <span class="color2"></span>
-        <span class="color3"></span>
-        <span class="color4"></span>
-        <span class="color5"></span>
-        <span class="color6"></span>
-        <span class="color7"></span>
-        <span class="color8"></span>
-        <span class="color9"></span>
-        <span class="color10"></span>
-        <span class="color11"></span>
-        <span class="color12"></span>
-        <span class="color13"></span>
-        <span class="color14"></span>
-        <span class="color15"></span>
-        <span class="color16"></span>
-        <span class="color17"></span>
-        <span class="color18"></span>
-      </div>
-    </div -->
 
     <!-- Header Area -->
     <header id="header" class="header navbar-header-wrapper">
@@ -291,96 +246,20 @@
     </footer>
     <!--/ End Footer Area -->
 
-    <script>
-      const countEl = document.getElementById("count");
-      updateVisitCount();
-      function updateVisitCount() {
-        fetch("https://api.countapi.xyz/hit/moroccoai.github.io/Website/")
-          .then((res) => res.json())
-          .then((res) => {
-            countEl.innerHTML = res.value;
-          });
-      }
-    </script>
-
-    <!-- SLIDER SCRIPT -->
-
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
-    <!-- END SLIDER SCRIPT -->
-
-    <!-- FORM Script -->
-    <script>
-      function toShow() {
-        var iframe = document.getElementById("gform");
-        iframe.style.display = "block";
-      }
-    </script>
-    <!-- END FORM Script -->
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/colors.js"></script>
     <script src="js/jquery.nav.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script-->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/animate-text.js"></script>
-
-    <script src="js/particles.min.js"></script>
-    <script src="js/particle-code.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.5/tsparticles.min.js"></script>
-
-    <script src="js/tsparticles.js"></script>
-
     <script src="js/jquery.counterup.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"
-    ></script>
-    <script type="text/javascript" src="js/gmaps.min.js"></script>
-    <script src="js/main.js"></script>
-    <script
-      type="text/javascript"
-      src="https://addevent.com/libs/atc/1.6.1/atc.min.js"
-    ></script>
-    <script src="js/data_filter.js"></script>
+
   </body>
 </html>
