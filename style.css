@@ -2600,6 +2600,22 @@ background-color: #fff; // Must Match Page Background
 	color: #fff;
 	border-bottom: 1px solid #fff;
 }
+
+.contact .form select {
+	width: 100%;
+	height: 46px;
+	padding-left: 15px;
+	text-transform: capitalize;
+	background: none;
+	border: none;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.contact .form .default {
+	color:#9f9f9f;
+}
+
 .contact .form textarea {
 	width: 100%;
 	height: 200px;
