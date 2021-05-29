@@ -2872,3 +2872,68 @@ END social icons styling
 /*===================
 	End Footer CSS
 =====================*/
+
+/*==========================================
+    COMMUNITY PAGE CSS 
+===========================================*/
+
+.quotation{
+  font-size: 22px;
+  background: #f9f9f9;
+  border-left: 10px solid #243b55;  /*  #141e30   */   
+  margin: .1em 0px;
+  padding: 0 0px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 5px 20px;
+  line-height: 1.4;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #ED1C24;
+  font-size: 3em;
+}
+
+.quote_footer{
+  margin:0;
+  text-align: right;
+  font-size: 1em;
+  font-style: italic;
+  color: #141e30;
+}
+
+.culture {
+	text-align: justify;
+  font-size: 18px;
+  background: #f9f9f9;
+
+}
+
+.culture-values li {
+  font-size: 18px;
+  color:#141e30;
+  text-align: justify;
+  padding-bottom: 5px;
+
+}
+
+.culture-values li:hover {
+  color:#ED1C24;
+}
+
+.culture-button a:hover{
+	color:#ED1C24!important;
+}
+
+a:active {
+	text-decoration: none !important;
+}
+a:visited {
+	text-decoration: none !important;
+}
