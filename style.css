@@ -2566,6 +2566,7 @@ background-color: #fff; // Must Match Page Background
 /*contact-right*/
 #contact .contact-right {
 	padding:60px 30px 60px 90px;
+
 }
 #contact .contact-right::before {
 	position: absolute;
@@ -2611,6 +2612,13 @@ background-color: #fff; // Must Match Page Background
 	color: #fff;
 	border-bottom: 1px solid #fff;
 }
+
+option {
+	z-index: 10;
+	background: white;
+	color: black;
+}
+
 
 .contact .form .default {
 	color:#9f9f9f;
@@ -2953,3 +2961,4 @@ a:active {
 a:visited {
 	text-decoration: none !important;
 }
+
