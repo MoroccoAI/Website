@@ -2,7 +2,7 @@
 	color:#ED1C24;
 }
 
-.mail-success .mail-head .button .btn::before ,.mail-success .mail-head .button .btn:after,.mail-success .mail-head .button span::before,.mail-success .mail-head .button span::after,.error .error-left .button span::after ,.error .error-left .button span::before,.error .error-left .button .btn:after,.error .error-left .button .btn::before ,#blog-single .single-news .news-body .date,#single-pf .owl-nav button:hover,.color-plate .icon,#scrollUp,.section-title h2:before,.section-title h2::after,#slider .button .btn::before,#slider .button .btn:after,#slider .button span::before,#slider .button span::after,#Services .single-service i,#blog .single-news .news-body .date,#team .team-hover .social li a:hover,.p-table4 .button .btn::before,.p-table4 .button .btn:after,.p-table4 .button span::before,.p-table4 .button span::after,#contact .contact-left .p1::before,#contact .contact-right,.footer .single-footer .button,.footer .copyright,.slicknav_menu .slicknav_btn{
+.mail-success .mail-head .button .btn::before ,.mail-success .mail-head .button .btn:after,.mail-success .mail-head .button span::before,.mail-success .mail-head .button span::after,.error .error-left .button span::after ,.error .error-left .button span::before,.error .error-left .button .btn:after,.error .error-left .button .btn::before ,#blog-single .single-news .news-body .date,#single-pf .owl-nav button:hover,.color-plate .icon,#scrollUp,.section-title h2:before,.section-title h2::after,#slider .button .btn::before,#slider .button .btn:after,#slider .button span::before,#slider .button span::after,#Services .single-service i,#blog .single-news .news-body .date,#team .team-hover .social li a:hover,.p-table4 .button .btn::before,.p-table4 .button .btn:after,.p-table4 .button span::before,.p-table4 .button span::after,#contact .contact-left .p1::before,.footer .single-footer .button,.footer .copyright,.slicknav_menu .slicknav_btn{
 	background:#ED1C24;
 }
 #Services .single-service h3::before,.latest-works .single-work .works-hover a:hover i,.p-table4 .table-head .amount{
@@ -16,4 +16,19 @@
 }
 .footer .single-footer h2 i{
 	border-right-color:#ED1C24;
+}
+
+#contact .contact-right  {
+	/*  background: #CB356B;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	/* background: #1D4350;  /* fallback for old browsers */
+	/* background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+	/* background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	background: #c94b4b;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #243b55, #ED1C24);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #243b55, #ED1C24); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 }

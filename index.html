@@ -54,6 +54,10 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<!--script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script-->
 
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 		
     </head>
     <body>
@@ -64,7 +68,7 @@
 		<!-- End Google Tag Manager (noscript) -->
 		
 		<!-- Header Area -->
-		<header id="header" class="header navbar-header-wrapper">
+		<header id="header" class="header navbar-header-wrapper navbar-expand-lg navbar-light bg-light">
 			<!-- Header Inner -->
 			<div class="header-inner" style="height: 80px;"> <!-- style="background-color: #1A2A3F;" -->
 				<div class="container">
@@ -97,24 +101,28 @@
 			</div>
 		</header>
 		<!--/ End Header Area -->
-		
-
   
 	  	<!-- Full Page Image Background Carousel Header -->
-	    <div id="home" class="carousel slide" data-interval="3000">
+	    <div id="home" class="carousel slide" data-ride="carousel">
 	        <!-- Indicators -->
-	        <ol class="carousel-indicators" style="bottom:-10px;">
+	        <ol class="carousel-indicators" style="">
 	            <li data-target="#home" data-slide-to="0" class="active"></li>
 	            <li data-target="#home" data-slide-to="1"></li>
 				<li data-target="#home" data-slide-to="2"></li>
 				<li data-target="#home" data-slide-to="3"></li>
 				<!--li data-target="#home" data-slide-to="4"></li-->
-				<br/>  <a style=" position: relative;  text-align:center; font-size: small; opacity:0.6;" href="https://www.freepik.com" target="_blank">Background designed by macrovector / Freepik</a>
+				 
+				 <a style="word-wrap: break-word; position: absolute;  font-size: small; opacity:0.6;" href="https://www.freepik.com" target="_blank">Background designed by macrovector / Freepik</a> 
+				
 	        </ol>
+	        <ul>
+	        	
+	        </ul>
+
 
 	        <!-- Wrapper for Slides -->
 	        <div class="carousel-inner" style="background-color: #141E30; background-image: url('img/3363_res.jpg'); background-size:cover;">
-	            <div class="item active" >
+	            <div class="carousel-item active" >
 	                <!-- Set the first background image using inline CSS below. -->
 		           	 <div class="carousel-caption">
 						 <h2 class="animated fadeInLeft cd-headline clip is-full-width" style="font-weight: bold; display: inline-block;">Morocco 
@@ -137,7 +145,7 @@
 				<!--  //////////////////////////////////////////  -->
 				
 				<!-- //////////////////////////////////////////-->
-				<div class="item" style="">
+				<div class="carousel-item" style="">
 	                <!-- Set the first background image using inline CSS below. -->
 		           	 <div class="carousel-caption">
 	                    <h2 class="animated fadeInLeft" style="font-family: Open Sans; font-weight: bold">Webinar
@@ -200,7 +208,7 @@
 
 				<!--  //////////////////////////////////////////  -->
 
-	        	<div class="item" >
+	        	<div class="carousel-item" >
 	                <!-- Set the first background image using inline CSS below. -->
 		           	 <div class="carousel-caption">
 	                    <h2 class="animated fadeInLeft" style="font-family: Open Sans; font-weight: bold"><span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">AI</span> O<span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">'</span>Clock
@@ -279,7 +287,7 @@
 	        	</div>
 
 				<!-- ////////////////////  SLACK   ////////////////////-->
-				<div class="item" >
+				<div class="carousel-item" >
 	                <!-- Set the first background image using inline CSS below. -->
 		           	 <div class="carousel-caption ">
 	                    <h2 class="animated fadeInLeft" style="align: right; font-family: Product Sans; font-weight: bold"> 
@@ -335,12 +343,14 @@
 
 				<!-- //////////////////////////////////////////-->
 		        <!-- Controls -->
-		        <a class="left carousel-control" href="#home" data-slide="prev" style="pointer-events: all">
-		            <span class="icon-prev" ></span>
-		        </a>
-		        <a class="right carousel-control" href="#home" data-slide="next" style="pointer-events: all">
-		            <span class="icon-next"></span>
-		        </a>
+		        <a class="carousel-control-prev" href="#home" role="button" data-slide="prev">
+		        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		        <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="carousel-control-next" href="#home" role="button" data-slide="next">
+			        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			        <span class="sr-only">Next</span>
+			    </a>
 		    </div>
 
 		    </div>
@@ -377,24 +387,18 @@
 				
 				<div class="upcoming filterDiv" style="back">
 					
-					<div class="row" style="max-height: 300px;"> 
+					<div class= "row">
 
-						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-							<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
+							<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%; object-fit: contain">
 								<center>
 								<img src="img/Rajaa_el_hamdani.jpg" style="border-radius: 50%; width: 150px; height: 150px; vertical-align: middle;" />
 								</center>
 							</div>
-						</div> 
-						<!--    col-md-5  (video) col-md-8       -->
-						<div class="row wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s">
-							<div class="col-md-8 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
-								
 
-								<h3 style="font-family: Open Sans; color:black; font-weight: bold">Morocco<span style="font-family: 'Library 3 am';color:#ED1C24">AI</span> <span style="font-family: Open Sans"> Webinar</span> <span style="font-family: 'LIBRARY 3 AM';color:#ED1C24">Series</span>
-								</h3>
-								<br/>
+							<!--   col-md-8    -->
 
+							<div class="col-md-8 col-sm-12 col-xs-12 " style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
+						
 								<p> <span style="font-weight: bold; font-size: large; color:#000">Automatic information extraction from legal documents
 								</span> <br/> <b style="font-size: large;"><a href="https://fr.linkedin.com/in/rajaaelhamdani" target="_blank">Rajaa El Hamdani</a></b> - <b>AI Research Scientist</b> and Member of the <a href="https://smartlawhub.net/" target="_blank">Smart Law Team</a> at <a href="https://www.hec.edu/en" target="_blank">HEC Paris</a>, France <br/>
 								<br/>
@@ -407,10 +411,10 @@
 									<br/>
 								</p>
 								<!--a class="addtocal" href="Calendar/MoroccoAI Webinar.ics" download="MoroccoAI Webinar.ics">Add to calendar</a-->
-
+								
 								<div class="row event_buttons">
 									
-									<div class="col-md-6 col-sm-5 col-xs-5 elem">
+									<div class="col-md-6 col-sm-5 col-xs-5 elem" style="">
 										<div class="button-head upcoming_butt" >
 											<div class="button join_btn" >
 												<span></span>
@@ -419,9 +423,9 @@
 											</div>
 										</div>
 									</div>
-									<!--    col-md-12 (without register)  col-md-6  col-sm-5 col-xs-5   -->
+									<!--    col-md-12 (without register)  col-md-6  col-sm-5   -->
 									<div class="col-md-6 col-sm-12 col-xs-12 elem">
-										<div class="button-head upcoming_butt" >
+										<div class="button-head upcoming_butt"  >
 											<div class="button join_btn" >
 												<span></span>
 												<a type="button" class="btn" style="color:#ED1C24; font-weight: bold" data-toggle="modal" data-target="#exampleModalLong"> Show Abstract
@@ -429,22 +433,22 @@
 											</div>
 										</div>
 									</div>
-
 								</div>
+							</div>
 
-							</div> 
-							<!--div class="col-md-3 col-sm-12 col-xs-12 single-service">
+							<!--div class="col-md-3 col-sm-12 col-xs-12 Web_Video">
 								<center>
-								<iframe src="https://www.youtube.com/embed/XcS7u6IYJ4Q" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+								<iframe  src="https://www.youtube.com/embed/XcS7u6IYJ4Q" frameborder="0"  allowfullscreen></iframe>
 								</center>
 							</div-->
+							
 						</div>
-
+					
 						<!-- Button trigger modal -->
 					
 						<!-- Modal -->
 						<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="margin-top: 50px;">
-						  <div class="modal-dialog" role="document">
+						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content" style="text-align: center; line-height: 2; color:#000; font-family: Open Sans">
 						      <div class="modal-header">
 						        <h2 class="modal-title" id="exampleModalLongTitle" style="font-family: 'Product Sans'">Abstract</h2>
@@ -468,7 +472,6 @@
 						  </div>
 						</div>
 
-					</div>
 
 
 					<!--div class="row upcoming_sep" >
@@ -563,36 +566,32 @@
 				<!-- START CONFERENCE SUB SECTION -->
 				<div class="conferences filterDiv" >
 
-					<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
-						<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
+					<div class="row">
+						
+						<div class="col-md-3 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s" style="border-radius: 50%;">
 							<center>
 							<img src="img/ai-and-machine-learning.png" style="border-radius: 50%; width: 200px; height: auto; vertical-align: middle; text-align: center;" />
 							</center>
 						</div>
-					</div> 
 					
-					<div class="row" style="max-height: 300px;"> 
-						<div class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s">
-							<div class="col-md-8 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
-								
-								<h2 style="color:black; font-weight: bold">
-									Deep Learning IndabaX Morocco ’19
-								</h2>
-								<br/><br/>
-								<p style="font-weight: bold">Deep Learning IndabaX Morocco 2019, was the first Deep Learning event in Morocco supported by the African Deep Learning Indaba. The two days event took place at the Faculty of Sciences and Techniques of Mohammedia (FSTM) and invited several moroccan researchers to talk about diverse topics in the field of Artificial Intelligence. 
-								</p>
-								<div class="button-head" style="float: right;">
-									<div class="button join_btn" >
-										<span></span>
-										<a href="events/conferences/indabaXMorocco-2019/index.html" target="_blank" class="btn" style="color:#ED1C24; font-weight: bold"> <i class="fa fa-link"></i>
-											Learn More
-										</a>
-									</div>
+						<div class="col-md-8 col-sm-12 col-xs-12 single-service wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
+							
+							<h2 style="color:black; font-weight: bold">
+								Deep Learning IndabaX Morocco ’19
+							</h2>
+							<br/><br/>
+							<p style="font-weight: bold">Deep Learning IndabaX Morocco 2019, was the first Deep Learning event in Morocco supported by the African Deep Learning Indaba. The two days event took place at the Faculty of Sciences and Techniques of Mohammedia (FSTM) and invited several moroccan researchers to talk about diverse topics in the field of Artificial Intelligence. 
+							</p>
+							<div class="button-head" style="float: right;">
+								<div class="button join_btn" >
+									<span></span>
+									<a href="events/conferences/indabaXMorocco-2019/index.html" target="_blank" class="btn" style="color:#ED1C24; font-weight: bold"> <i class="fa fa-link"></i>
+										Learn More
+									</a>
 								</div>
-
 							</div>
+
 						</div>
-						
 					</div>
 
 				</div>
@@ -664,7 +663,7 @@
 						<!-- END FIFTH WEBINAR SLIDER -->
 
 						<div class="row">
-							<div class="section-title">
+							<div class="section-title" style="padding: 0 50% !important;">
 								<h2></h2>
 								<p></p>
 							</div>
@@ -729,7 +728,7 @@
 						<!-- END FOURTH WEBINAR SLIDER -->
 
 						<div class="row">
-							<div class="section-title">
+							<div class="section-title" style="padding: 0 50% !important;">
 								<h2></h2>
 								<p></p>
 							</div>
@@ -798,7 +797,7 @@
 						<!-- END THIRD WEBINAR SLIDER -->
 
 						<div class="row">
-							<div class="section-title">
+							<div class="section-title" style="padding: 0 50% !important;">
 								<h2></h2>
 								<p></p>
 							</div>
@@ -856,7 +855,7 @@
 						<!-- END SECOND WEBINAR SLIDER -->
 
 						<div class="row">
-							<div class="section-title">
+							<div class="section-title" style="padding: 0 50% !important;">
 								<h2></h2>
 								<p></p>
 							</div>
@@ -907,12 +906,12 @@
 
 						<!-- BEGIN Modal FIRST WEBINAR -->
 						<div class="modal fade" id="exampleModalLong_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="margin-top: 50px;">
-							<div class="modal-dialog" role="document">
+							<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content" style="text-align: center; line-height: 2; color:#000; font-family: Open Sans">
 							  <div class="modal-header">
 							    <h2 class="modal-title" id="exampleModalLongTitle" style="font-family: 'Product Sans'">Abstract</h2>
 							  </div>
-							  <div class="modal-body" style="text-align: justify">
+							  <div class="modal-body " style="text-align: justify">
 							    Attention mechanisms have improved the performance of NLP tasks while 
 								allowing models to remain explainable. Self-attention is currently widely used; however, interpretability is difficult due to the numerous attention distributions. Recent work has shown that model representations can benefit from label-specific information while facilitating interpretation of predictions. We introduce the Label Attention Layer, a new form of self-attention where attention heads represent labels. We test our novel approach by running constituency and dependency parsing experiments on the Penn Treebank (PTB) and the Chinese Treebank (CTB) datasets. The new proposed model achieves state-of-the-art results for both tasks. Moreover, our model requires fewer self-attention layers compared to existing models. Finally, we share our findings that Label Attention heads can learn relations between syntactic categories and show pathways to analyze errors.
 							  </div>
@@ -929,7 +928,7 @@
 
 						<!-- BEGIN Modal SECOND WEBINAR -->
 						<div class="modal fade" id="exampleModalLong_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="margin-top: 50px;">
-							<div class="modal-dialog" role="document">
+							<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content" style="text-align: center; line-height: 2; color:#000; font-family: Open Sans">
 							  <div class="modal-header">
 							    <h2 class="modal-title" id="exampleModalLongTitle" style="font-family: 'Product Sans'">Abstract</h2>
@@ -952,7 +951,7 @@
 
 						<!-- BEGIN Modal THIRD WEBINAR -->
 						<div class="modal fade" id="exampleModalLong_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="margin-top: 50px;">
-							<div class="modal-dialog" role="document">
+							<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content" style="text-align: center; line-height: 2; color:#000; font-family: Open Sans">
 							  <div class="modal-header">
 							    <h2 class="modal-title" id="exampleModalLongTitle" style="font-family: 'Product Sans'">Abstract</h2>
@@ -973,12 +972,12 @@
 						</div>
 						<!-- BEGIN Modal FOURTH WEBINAR -->
 						<div class="modal fade" id="exampleModalLong_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="margin-top: 50px;">
-							<div class="modal-dialog" role="document">
+							<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content" style="text-align: center; line-height: 2; color:#000; font-family: Open Sans">
 							  <div class="modal-header">
 							    <h2 class="modal-title" id="exampleModalLongTitle" style="font-family: 'Product Sans'">Abstract</h2>
 							  </div>
-							  <div class="modal-body" style="text-align: justify">
+							  <div class="modal-body " style="text-align: justify">
 							    Much work has been done recently to make neural networks more interpretable, and one approach is to arrange for the network to use only a subset of the available features. In linear models, Lasso (or L1-regularized) regression assigns zero weights to the most irrelevant or redundant features, and is widely used in data science. However the Lasso only applies to linear models. In this webinar, Mr. Lemhadri will introduce LassoNet, a neural network framework with global feature selection. The proposed approach enforces a hierarchy: specifically a feature can participate in a hidden unit only if its linear representative is active. Unlike other approaches to feature selection for neural nets, the method uses a modified objective function with constraints, and so integrates feature selection with the parameter learning directly. As a result, it delivers an entire regularization path of solutions with a range of feature sparsity. On systematic experiments, LassoNet significantly outperforms state-of-the-art methods for feature selection and regression. The LassoNet method uses projected proximal gradient descent, and generalizes directly to deep networks.
 							  </div>
 							  <div class="modal-footer" style="text-align: center !important;">
@@ -994,7 +993,7 @@
 
 						<!-- BEGIN Modal FIFTH WEBINAR -->
 						<div class="modal fade" id="exampleModalLong_5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="margin-top: 50px;">
-							<div class="modal-dialog" role="document">
+							<div class="modal-dialog modal-lg" role="document">
 								<div class="modal-content" style="text-align: center; line-height: 2; color:#000; font-family: Open Sans">
 								  <div class="modal-header">
 								    <h2 class="modal-title" id="exampleModalLongTitle" style="font-family: 'Product Sans'">Abstract</h2>
@@ -1020,21 +1019,23 @@
 
 		<!-- ////////////////////////////////////////////////////////////////// -->
 					<!-- BEGIN PODCASTS TAB ------>
-
+<!-- ////////////////////////////////////////////////////////////////// -->
 					<div class="podcasts filterDiv" >	
 
 						<!-- BEGIN FOURTH WEBINAR SLIDER -->
+
+
 						<div class="row" style=""> 
 
-						<div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s">
+							<!--div class="wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0.1s" -->
 							<div class="col-md-3 col-sm-12 col-xs-12 " style="border-radius: 50%;">
 								<center>
 								<img src="img/K_baina.jpg" style="border-radius: 50%; width: 150px; height: 150px; vertical-align: middle;" />
 								</center>
 							</div>
-						</div> 
+							
 						<!--    col-md-5  (video) col-md-8       -->
-						<div class="row wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s">
+							<!-- div class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s" -->
 
 							<div class="col-md-5 col-sm-12 col-xs-12 single-service" style="background:#F6F6F6;box-shadow: 0px 0px #ED1C24; border-right: 0px; border:1px solid transparent; min-height: 300px;  ">
 								
@@ -1073,8 +1074,8 @@
 								</center>
 							</div>
 							
+							
 						</div>
-
 						<!-- Modal -->
 						<div class="modal fade" id="Modal_Bio_pod_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="margin-top: 50px;">
 						  <div class="modal-dialog" role="document">
@@ -1095,7 +1096,7 @@
 						    </div>
 						  </div>
 						</div>
-					</div>
+					
 
 					<!--  END PODCASTS TAB ------->
 

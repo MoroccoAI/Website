@@ -2916,6 +2916,19 @@ END social icons styling
   font-size: 3em;
 }
 
+.quotation:after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #ED1C24;
+  font-size: 3em;
+}
+
+
 .quote_footer{
   margin:0;
   text-align: right;
