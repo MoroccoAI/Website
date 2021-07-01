@@ -96,6 +96,23 @@ a:hover{
     padding: 0 190px;
 }
 
+/**  Wavy separator   */
+/*  journal club  ***/
+
+.iframe_journal {
+  margin-top: -150px; /* Cut off top bar */
+  margin-bottom: -30px; /* Cut off bottom bar */
+}
+
+.div_journal {
+  overflow: hidden; /* Makes cutoff work */
+  border: .5px solid black; /* Just for aesthetics, can be removed */
+  /*display: block; /* Fit div to contents */
+}
+
+
+/**  ---------------------------------------- */
+
 .section-title h2{
 	font-size:32px;
 	font-weight: 500;
