@@ -48,7 +48,45 @@
 
     <link rel="stylesheet" href="#" id="colors" />
 
+    <script>
+        const url = new URL(
+            "https://api.sender.net/v2/subscribers"
+        );
 
+        let headers = {
+            "Authorization": "Bearer [eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWNmZmI3NTU5NjBlOGY4OWRjZTM3YmMyYmZjOGFhZDdmNGFmYjZlZjBjNDQ5MzZkMDNkZTZhZmM2NWExYzJkNzYyZTk4MDA1ZmVhYTk4MTciLCJpYXQiOiIxNjI1MTY5MTU0LjI4NjY2NyIsIm5iZiI6IjE2MjUxNjkxNTQuMjg2Njc3IiwiZXhwIjoiNDc3ODc3Mjc1NC4yODI1NTkiLCJzdWIiOiI5NjY5MCIsInNjb3BlcyI6W119.my4pXMIfR6M0d7CwYuqXKxZh-Agh5lL_HwQKQhYZjrbqGOBkk79kT_J1-YN2-1Z8qgZN_-I0fYVwz4Gy4h-gxg]",
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        };
+
+        let data = {
+            "email": "support+100@sender.net",
+            "firstname": "Sender",
+            "lastname": "Support",
+            "groups": ["eZVD4w", "b2vAR1"],
+            "fields": {"{$test_text}": "Documentation example", "{$test_num}": 8}
+        };
+
+        fetch(url, {
+            method: "POST",
+            headers, body: JSON.stringify(data)
+        }).then(response => response.json());
+    </script>
+
+    <script>
+        (function (s, e, n, d, er) {
+            s['Sender'] = er;
+            s[er] = s[er] || function () {
+                (s[er].q = s[er].q || []).push(arguments)
+            }, s[er].l = 1 * new Date();
+            var a = e.createElement(n),
+                m = e.getElementsByTagName(n)[0];
+            a.async = 1;
+            a.src = d;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+        sender('79f3d197328391')
+    </script>
 
   </head>
   <body>
@@ -180,92 +218,14 @@
       </div>
     </section>
     <!--/ End features Area -->
-
-    <!--/ contact Area -->
-    <section id="contact" class="contact section" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row">
-            <div class="contact-head">
-              <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="contact-left">
-                  <h3>Contact <span>US</span></h3>
-                  <p class="p1">Sign up to our mailing list to receive updates on our upcoming events  <br/><br/><br/> <br/></p>
-                  
-                </div>
-              </div>
-              <div class="col-md-8 col-sm-8 col-xs-12">
-                <div class="contact-right">
-                  <div class="row">
-                    <form class="form" action="#">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input name="name" type="text" placeholder="First Name">
-                        </div>
-                        <div class="form-group">
-                          <input name="email" type="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                          <input name="country" type="text" placeholder="Country">
-                        </div>
-                        <!--div class="form-group">
-                          <input name="affiliation" type="text" placeholder=" enter your Affiliation">
-                        </div-->
-
-                        <div class="form-group">
-                          <select  style=' appearance: auto;'>
-                            <option class="default" selected disabled hidden>Affiliation</option>
-                            <option value="um5">Université Mohammed 5 de Rabat</option>
-                            <option value="usmba">Université Sidi Mohammed Ben Abdellah</option>
-                            <option value="uh2c">Université Hassan 2 Casablanca</option>
-                            <option value="um6p">Université Mohammed VI Polytechnique </option>
-                            <option value="uir">Université Internationale de Rabat </option>
-                          </select>
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input name="name" type="text" placeholder="Last Name">
-                        </div>
-
-                        <div class="form-group">
-                          <select  style=' appearance: auto;'>
-                            <option class="default" selected disabled hidden>Gender</option>
-                            <option value="female">Male</option>
-                            <option value="male">Female</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <input name="city" type="text" placeholder="City">
-                        </div>
-                        <div class="form-group">
-                          
-                        </div>
-                        <div class="form-group">
-                          <input name="school" type="text" placeholder="School">
-                        </div>
-                        
-                      </div>
-                      
-                      <div class="col-md-12">
-                        <div class="button">
-                            <button type="submit" class="btn primary">Submit<i class="fas fa-paper-plane" aria-hidden="true" ></i></button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </ End Contact Form >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    <!--/ End contact Area -->
-
-
-
+    <!--sign up form -->
+<section class="section">
+    <div class="container" style="display: flex; justify-content: center;">
+        <div style="text-align: left" class="sender-form-field" data-sender-form-id="kqlcfvvbdlvrpal6j1l"></div>
+    </div>
+</section>
+<!--end of sign up form-->
+ 
     <!-- Footer Area -->
     <footer
       id="footer"
