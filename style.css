@@ -588,7 +588,7 @@ body {
     .upcome a {font-size: 15px;}
     .carousel-caption {padding-top: 100px;}
     .title_sep {padding: 0 50%;}
-    .community_headline {margin-top: 20px!important; }
+    .community_headline {margin-top: 0px!important; }
     .community_headline h2{font-size: 20px!important;}
 }
 
