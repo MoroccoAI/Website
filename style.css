@@ -2989,11 +2989,27 @@ END social icons styling
 
 .culture-values li:hover {
   color:#ED1C24;
+  -webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	transition:all 0.3s ease;
 }
 
-.culture-button a:hover{
-	color:#ED1C24!important;
+.culture-button:hover {
+	background-color: transparent!important;
+	border-color: #ED1C24!important;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	transition:all 0.3s ease;
 }
+.culture-button:hover *{
+	color:#ED1C24!important;
+	background-color: transparent!important;
+	border-color: #ED1C24!important;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+
 
 a:active {
 	text-decoration: none !important;
