@@ -48,6 +48,45 @@
 
     <link rel="stylesheet" href="#" id="colors" />
 
+    <script>
+        const url = new URL(
+            "https://api.sender.net/v2/subscribers"
+        );
+
+        let headers = {
+            "Authorization": "Bearer [eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWNmZmI3NTU5NjBlOGY4OWRjZTM3YmMyYmZjOGFhZDdmNGFmYjZlZjBjNDQ5MzZkMDNkZTZhZmM2NWExYzJkNzYyZTk4MDA1ZmVhYTk4MTciLCJpYXQiOiIxNjI1MTY5MTU0LjI4NjY2NyIsIm5iZiI6IjE2MjUxNjkxNTQuMjg2Njc3IiwiZXhwIjoiNDc3ODc3Mjc1NC4yODI1NTkiLCJzdWIiOiI5NjY5MCIsInNjb3BlcyI6W119.my4pXMIfR6M0d7CwYuqXKxZh-Agh5lL_HwQKQhYZjrbqGOBkk79kT_J1-YN2-1Z8qgZN_-I0fYVwz4Gy4h-gxg]",
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        };
+
+        let data = {
+            "email": "support+100@sender.net",
+            "firstname": "Sender",
+            "lastname": "Support",
+            "groups": ["eZVD4w", "b2vAR1"],
+            "fields": {"{$test_text}": "Documentation example", "{$test_num}": 8}
+        };
+
+        fetch(url, {
+            method: "POST",
+            headers, body: JSON.stringify(data)
+        }).then(response => response.json());
+    </script>
+
+    <script>
+        (function (s, e, n, d, er) {
+            s['Sender'] = er;
+            s[er] = s[er] || function () {
+                (s[er].q = s[er].q || []).push(arguments)
+            }, s[er].l = 1 * new Date();
+            var a = e.createElement(n),
+                m = e.getElementsByTagName(n)[0];
+            a.async = 1;
+            a.src = d;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+        sender('79f3d197328391')
+    </script>
 
 
   </head>
@@ -159,7 +198,7 @@
                   <br/><br/>
                 <center style="font-weight: bold; font-size: 18px; font-style: italic;">
 
-                  This is your community, so feel at home and join Slack to connect with your fellow Moroccans, exchange ideas, build collaborations, and lead your initiatives. 
+                  This is your community, so feel at home and join Slack to connect with your fellow Moroccans, exchange ideas, build collaborations, and lead your initiatives. <br/> Most importantly do not forget to subscribe to our <a href="#subscription_form">MAILING LIST</a> below.
 
                   <!--  Contact us and join our mailing list by filling this form  -->
 
@@ -215,9 +254,17 @@
 
         </div>
       
-      
-
     </section>
+
+
+    <!--/ START Sign up form -->
+    <section id="subscription_form" class="section" style="margin-top: -200px; margin-bottom: 10px; ">
+      <div class="container" style="display: flex; justify-content: center;">
+        <div style="text-align: left;" width="100%" class="sender-form-field" data-sender-form-id="kqlcfvvbdlvrpal6j1l"></div>
+      </div>
+    </section>
+
+    <!--/ END Sign up form -->
 
     <!--/ contact Area >
     <section id="contact" class="contact section" data-stellar-background-ratio="0.5">
@@ -374,6 +421,12 @@
 
     </footer>
     <!--/ End Footer Area -->
+
+    <script type="text/javascript">
+      $('#subscription_form').click(function(){
+      $(document).scrollTop(100) // any value you need
+      });
+    </script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
