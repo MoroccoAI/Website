@@ -613,20 +613,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  background-color: #f82249;
 }
 
 #intro .poster-btn{
-  border: 2px solid #19328e;
+  background-color: #19328e;
 }
 
 #intro .poster-btn:hover {
-  background: #19328e;
+  font-size: 20px;
   color: #fff;
 }
 
 #intro .about-btn:hover {
-  background: #f82249;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -1768,6 +1768,74 @@ body.mobile-nav-active #mobile-nav-toggle {
 .dropdown-item:focus,
 .dropdown-item:hover {
   background-color:  rgba(21, 20, 29, 0.98)  !important;
+}
+
+.objectives li {
+  padding-bottom: 10px;
+}
+
+.team-list {
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
+
+.team-member {
+  margin: 15px;
+  width: 220px;
+  display: inline-block;
+  min-height: 200px;
+  padding: 10px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.program-member {
+  margin: 15px;
+  width: 220px;
+  display: inline-block;
+  min-height: 200px;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.member-img {
+  width: 170px;
+  /*border: 1px solid #8A9191;*/
+  margin-bottom: 10px;
+}
+
+.member-name {
+  color: #e0072f;
+  font-size: 17px;
+}
+
+.member-aff {
+  font-size: 11px;
+}
+
+.sponsors {
+  max-width: 1600px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
+
+.sponsor {
+  background: transparent;
+  height: 150px;
+  width: 180px;
+  margin: 20px;
+  display: inline-block;
+  align-items: center;
+}
+
+.sponsor img {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
