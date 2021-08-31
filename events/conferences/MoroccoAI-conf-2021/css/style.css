@@ -1830,7 +1830,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .sponsors {
-  max-width: 1600px;
+  max-width: 800px;
   overflow: hidden;
   text-align: center;
   margin: auto;
@@ -1846,6 +1846,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .sponsor img {
   width: 150px;
+  height: 150px;
 }
 
 .sponsor img {
