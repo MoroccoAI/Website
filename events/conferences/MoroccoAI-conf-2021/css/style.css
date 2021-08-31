@@ -1838,11 +1838,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .sponsor {
   background: transparent;
-  height: 150px;
   width: 180px;
   margin: 20px;
   display: inline-block;
   align-items: center;
+}
+
+.sponsor img {
+  width: 150px;
 }
 
 .sponsor img {
