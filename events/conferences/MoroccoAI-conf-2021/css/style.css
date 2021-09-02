@@ -1804,7 +1804,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .program-member {
   margin: 15px;
-  width: 220px;
+  width: 240px;
   display: inline-block;
   min-height: 200px;
   padding: 10px;
@@ -1820,10 +1820,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .member-name {
-  color: #e0072f;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
-  margin: 2px;
+  color: #e0072f;
 }
 
 .member-title {
