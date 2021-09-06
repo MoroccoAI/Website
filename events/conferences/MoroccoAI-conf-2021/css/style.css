@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  height: 100%;
+}
 
 body {
   background: #fff;
@@ -1221,7 +1224,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
   height: 200px;
-  
+
 }
 
 #sponsors .sponsor-logo:hover img {
@@ -1528,6 +1531,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
+  position: relative;
+  clear: both;
 }
 
 #footer .footer-top {
@@ -1788,7 +1793,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .team-list {
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   margin: auto;
 }
 
@@ -1800,6 +1805,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 10px;
   overflow: hidden;
   text-align: left;
+}
+
+.team-member a {
+  color: blue;
 }
 
 .program-member {
