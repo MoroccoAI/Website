@@ -1793,7 +1793,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .team-list {
   overflow: hidden;
-  text-align: left;
+  text-align: center;
   margin: auto;
 }
 
@@ -1805,6 +1805,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 10px;
   overflow: hidden;
   text-align: left;
+  vertical-align: top;
 }
 
 .team-member a {
@@ -1842,7 +1843,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .member-aff {
-  font-size: 11px;
+  font-size: 13px;
   margin-bottom: 0;
   color: #007bff;
 }
