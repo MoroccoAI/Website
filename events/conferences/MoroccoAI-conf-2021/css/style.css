@@ -889,6 +889,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 
+.rounded-circle{
+
+  object-fit: cover;
+  max-width:250px;
+  max-height:250px;
+  width: auto;
+  height: auto;
+} 
 
 /*--------------------------------------------------------------
 # Registration Section
