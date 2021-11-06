@@ -898,6 +898,35 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: auto;
 } 
 
+
+/*--------------------------------------------------------------
+# HONORARY SPEAKER CARD
+--------------------------------------------------------------*/
+
+
+/* Header */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-top: -10vh;
+  margin-top: -1.5vw;
+  height: 400px;
+}
+
+#more {display: none;}
+
+.custom-edge {
+  box-shadow: inset 0px 0px 10px 20px white;
+}
+
+.bio {
+  font-size: 14px;
+}
+
 /*--------------------------------------------------------------
 # Registration Section
 --------------------------------------------------------------*/

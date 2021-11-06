@@ -170,3 +170,5 @@ var curring = 1;
    });
    loading();
 
+
+/*   JS CODE FOR HONORARY SPEAKER ANIMATION    */
