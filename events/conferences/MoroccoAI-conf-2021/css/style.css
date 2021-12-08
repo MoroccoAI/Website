@@ -1995,14 +1995,14 @@ input[type="checkbox"] {
   align-items: center;
 }
 
-.sponsor img {
-  width: 150px;
-  height: 150px;
-}
+/*.sponsor img {*/
+/*  width: 180px;*/
+/*  height: 150px;*/
+/*}*/
 
 .sponsor img {
   /*height: 150px;*/
-  width: 180px;
+  width: 180px;k
   margin: 0 auto;
   padding: 0;
 }
