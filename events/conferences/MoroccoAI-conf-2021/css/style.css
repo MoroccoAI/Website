@@ -976,7 +976,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #schedule {
-  padding: 60px 0 60px 0;
+  padding: 20px 0 20px 0;
 }
 
 #schedule .nav-tabs {
@@ -2041,11 +2041,19 @@ input[type="checkbox"] {
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
+  #header #logo img {
+    position:fixed; top:15px; left:20px;
+  max-height: 40px;
+  }
 }
 
 @media (max-width: 574px) {
   #venue .venue-info h3 {
     font-size: 24px;
+  }
+  #header #logo img {
+    position:fixed; top:15px; left:20px;
+  max-height: 35px;
   }
 }
 
@@ -2053,10 +2061,18 @@ input[type="checkbox"] {
   #schedule .nav-tabs a {
     padding: 8px 30px;
   }
+  #header #logo img {
+    position:fixed; top:15px; left:20px;
+  max-height: 30px;
+  }
 }
 
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
+  }
+  #header #logo img {
+  position:fixed; top:15px; left:20px;
+  max-height: 30px;
   }
 }
