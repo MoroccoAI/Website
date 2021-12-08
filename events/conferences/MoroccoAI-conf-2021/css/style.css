@@ -849,6 +849,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #speakers .speaker:hover .details {
   bottom: 0;
 }
+#speakers .speaker:hover .details a{
+  color: #f82249;
+}
 
 #speakers-details {
   padding: 60px 0;
