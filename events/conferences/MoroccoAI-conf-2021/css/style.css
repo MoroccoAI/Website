@@ -72,6 +72,25 @@ h6 {
 
 /* Back to top button */
 
+li {
+  list-style:none;
+  position: relative;
+  padding-left:25px;
+  padding-right:0px;
+}
+
+li:before {
+  font-family:FontAwesome;
+  position: absolute;
+  left: 0;
+  color:#f82249;
+}
+
+li.one:before {
+    font-size: 12px;
+   content:"\f111"; 
+}
+
 .back-to-top {
   position: fixed;
   display: none;
