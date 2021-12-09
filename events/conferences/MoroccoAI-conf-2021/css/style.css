@@ -2060,6 +2060,9 @@ input[type="checkbox"] {
     position:fixed; top:15px; left:20px;
   max-height: 35px;
   }
+  #schedule .challenge-btn {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2070,6 +2073,9 @@ input[type="checkbox"] {
     position:fixed; top:15px; left:20px;
   max-height: 30px;
   }
+  #schedule .challenge-btn {
+    display: block;
+  }
 }
 
 @media (max-width: 460px) {
@@ -2079,5 +2085,8 @@ input[type="checkbox"] {
   #header #logo img {
   position:fixed; top:15px; left:20px;
   max-height: 30px;
+  }
+  #schedule .challenge-btn {
+    display: block;
   }
 }
