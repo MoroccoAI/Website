@@ -64,8 +64,9 @@ Header
                 <li class="mobile-only"><a href="organizing-committee.html">Organizing Committee</a></li>
                 <li class="mobile-only"><a href="program-committee.html">Program Committee</a></li>
                 <li class="menu-active"><a href="datachallenge.html">Data Challenge</a></li>
-                <li><a href="workshop.html">Workshop</a></li>
                 <li><a href="papers.html">Call For Papers</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li class="menu-active"><a href="workshop.html">Workshop</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -90,16 +91,15 @@ Header
                 <div class="col-lg-7">
                     <!--div class="container wow fadeInUp"-->
                         <div class="section-content text-justify">
+                            <h4>Automatic Number Plate Recognition (ANPR) in Morocco Licensed Vehicles</h4>
                             <p>
-                                MoroccoAI Annual Conference 2021 is organizing a data challenge to offer an opportunity
-                                to anyone interested in machine learning to learn and test ML skills on a real-case
-                                problem.
+                                In Morocco, the number of registered vehicles doubled between 2000 and 2019. In 2019, a few months before lockdowns due to the Coronavirus Pandemic, 8 road fatalities were recorded per 10 000 registered vehicles. This rate is extremely high when compared with other <a href="https://stats.oecd.org/Index.aspx?DataSetCode=IRTAD_CASUAL_BY_AGE", target="_blank">IRTAD</a> countries. The <a href="https://www.narsa.ma/" target="_blank">National Road Safety Agency (NARSA)</a> established the road safety strategy 2017-26 with the main target to reduce the number of road deaths by 50% between 2015 and 2026 [1].
                             </p>
                             <p>
-                                This data challenge addresses the problem of Automatic Number Plate Recognition (ANPR)
-                                in Moroccan licensed vehicles. Based on a small training dataset of 450 labeled car
-                                images, the participants have to provide models able to accurately recognize the plate
-                                numbers of Morocco licensed vehicles.
+                                Law enforcement, speed limit enforcement and traffic control are one of most efficient measures taken by the authorities to achieve modern road user safety. Automatic Number Plate Recognition (ANPR) is used by the police around the world for law and speed limit enforcement and traffic control purposes, including to check if a vehicle is registered or licensed. It is also used as a method of cataloging the movement of traffic by highways agencies. ANPR uses optical character recognition (OCR) to read vehicles’ license plates from images. This is very challenging for many reasons including non-standardized license plate formats, complex image acquisition scenes, camera conditions, environmental conditions, indoor/outdoor or day/night shots, etc.
+                            </p>
+                            <p>
+                                This data-challenge addresses the problem of ANPR in Moroccan licensed vehicles. Based on a small training dataset of 450 labeled car images, the participants have to provide models able to accurately recognize the plate numbers of Morocco licensed vehicles.
                             </p>
 
                             <!--                            <h4>Rules of participation</h4>-->
@@ -111,52 +111,103 @@ Header
                             <!--                                At least one of the members should be able to attend IndabaXMorocco (29-30 April) in-->
                             <!--                                case they won.-->
                             <!--                            </p>-->
-                            <h4>How to Participate?</h4>
+
+                            <h4>Data</h4>
+                            <p>
+                                The dataset consists of 654 jpg pictures of the front or the back of vehicles showing the license plate. They are of different sizes and are mostly originating from cars. The plate license follows Moroccan standards.
+                                The plate strings might contain a series of numbers and latin letters of different length. Because letters in Morocco license plate standard are Arabic letters, we will consider the following transliteration: a &#8660; أ, b &#8660;ب, j &#8660; ج (jamaa), d &#8660; د , h &#8660; ه , waw &#8660; و, w &#8660; w (newly licensed cars), p &#8660; ش (police), fx &#8660; ق س (auxiliary forces), far &#8660;ق م م (royal army forces), m &#8660;المغرب, m &#8660; M.
+
+                            </p>
+                            <p>
+                            We provide the plate strings of 450 images (training set). The remaining 204 unlabeled images will be the test set. The participants are asked to provide the plate strings in the test set.
+                            </p>
+
+                            <h4>Files</h4>
+                            <ul>
+                                <li>train.csv: the training set</li>
+                                <li>test.csv: the test set
+                                <li>sample_submission.csv: sample submission file in the correct format
+                                <li>train/: folder that contains 450 images of the training data
+                                <li>train/: folder that contains 204 images of the test data
+                            </ul>
+
+                            <h4>Columns</h4>
+                            <ul>
+                                <li>image_id:id of the image
+                                <li>plate_string: plate number string
+                            </ul>
+
+                            <h4>Evaluation</h4>
+                            <p>
+                            The evaluation metric for this competition is the mean of the Levenshtein distance which is a string metric for measuring the difference between two sequences. Informally, the Levenshtein distance between two strings is the minimum number of single-character edits (insertions, deletions or substitutions) required to change one string into the other (Check this <a href="https://planetcalc.com/1721/" target="_blank">simulator</a>).
+                            </p>
+
+                            <h4>Submission</h4>
+
+                            The participants are required to submit 3 parts:
                             <ol>
-                                <li><b>Fill <a
-                                        href="https://www.drivendata.org" target="_blank">the form</a> </b>
+                                <li>
+                                    Submission file
+                                    <p>
+                                    The submission file should contain a header with two columns
+                                    <ul>
+                                        <li><b>image_id</b>: a string that contains the name of the image without the .jpg extension.</li>
+                                        <li><b>plate_string</b>: a string that contains the plate string</li>
+                                    </ul>
+                                    <br/>
+                                    The submission file must be named submission.csv. This will allow you to monitor your ranking on the public leaderboard of the competition.
+                                    </p>
                                 </li>
-                                <li><b>Receive team single identifier</b>
-                                <li><b>Receive link to competition</b>
+
+                                <li>Jupyter Notebook
+                                    <p>
+                                        A .ipynb file in Python 3 including the Test Classification function (the function that runs the classification task on new data). Please include the team’s name in the filename. This part will be requested after the end of the competition.
+                                    </p>
+                                </li>
+
+                                <li>Saved Model
+                                    <p>
+                                        A pickle file (or other format) which is the trained model that will be used by the Test Classification function to classify new data. Please include the team’s name in the filename. This part will be requested after the end of the competition.
+                                    </p>
+                                </li>
                             </ol>
 
                             <h4>Rules of Participation</h4>
                             <ul>
-                                <li>The participants are encouraged to take further pictures of vehicles in different
-                                    situations and environments, label them and add them to the training set in order to
-                                    increase the classification accuracy of their models.
-                                </li>
-                                <li>Freely & publicly available external data is allowed, including pre-trained
-                                    models.
-                                </li>
-                                <li>Don't cheat!</li>
+                                <li> Multiple individuals or entities may collaborate as a team. You may not participate on more than one Team. Each Team member must be a single individual operating a separate Kaggle account
+                                <li>Team membership may not exceed the Maximum of 3 members
+                                <li>The participants are encouraged to take further pictures of vehicles in different situations and environments, label them and add them to the training set in order to increase the classification performance of their models
+                                <li>You agree that upon request from the organizer, you must share your code to allow for reproducibility and checking your result
+                                <li>Freely & publicly available external data is allowed, including pre-trained models
+                                <li>Don't cheat!
                                 <li>Apply yourself!</li>
-                                <li>Have fun!</li>
+                                <li>Have FUN!</li>
                             </ul>
-
 
                             <h4>Prizes</h4>
                             <p>
-                                The following prizes are offered by the ANRT (Agence Nationale de la Réglementation des
-                                Télécommunications) and thanks to the Ministry of Digital Transition of Morocco. In
-                                addition, Nvidia is offering credits for training courses and certifications by Nvidia
-                                Deep Learning Institute (DLI)
-                                The prizes will be awarded on the basis of private leaderboard rank.
+                                Two prizes will be offered by the ANRT (Agence Nationale de la Réglementation des Télécommunications) and thanks to the Ministry of Digital Transition of Morocco. In addition, Nvidia is offering credits for training courses and certifications by Nvidia Deep Learning Institute (DLI).
 
                             </p>
-                            <ol>
-                                <li><b>1st Prize : </b> Award of $1400 value and Nvidia DLI Credits</li>
-                                <li><b>2nd Prize : </b> Award of 600$ value and Nvidia DLI Credits</li>
-                            </ol>
                             <p>
-                                During the conference, a special session will be organized where the <b>two
-                                winning solutions</b> to the Data Challenge will be presented and <b>the prizes</b> will
-                                be
-                                offered to the winning teams.
+                                The prizes will be awarded on the basis of private leaderboard rank.
+                            </p>
+                            <p>
+                                <b><span>&#42;</span></b> <i>Due to logistics considerations, the participants need to be residents in Morocco to be eligible for the prize</i>
+                            </p>
+
+                            <h4>
+                                Acknowledgements
+                            </h4>
+                            <p>
+                                We thank NASSMA-UM6P for providing a part of the dataset and ANRT for sponsoring the prizes and NVIDIA for offering DLI credits.
                             </p>
 
                         </div>
                     <!--/div-->
+                    <p>
+                     <b>[1]</b> <a href="https://www.narsa.ma/" target="_blank">National Road Safety Agency (NARSA)</a>
+                    </p>
                 </div>
                 <div class="col-lg-5">
                     <section id="schedule" class="section-with-bg">
@@ -180,7 +231,7 @@ Header
                                     <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
                                         <div class="row schedule-item">
                                             <div class="col-md-6">
-                                                <time><h6>December 9th, 2021</h6></time>
+                                                <time><h6>December 11th, 2021</h6></time>
                                             </div>
                                             <div class="col-md-6">
                                                 <h6><b>Start Date</b></h6>
@@ -210,6 +261,20 @@ Header
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="section-header">
+                                <h2>
+                                    <br>
+                                    <a href="https://forms.gle/Gx5DHHYn1U6uK2oF7"
+                                       style="text-transform: none"
+                                       class="btn btn-outline-danger btn-lg"
+                                       target="_blank">
+                                       REGISTER
+                                    </a> <br>
+                                </h2>
+                                <p>Kaggle competition link will be visible after registration</p>
+                            </div>
+
                         </div>
                     </section>
 
@@ -217,31 +282,52 @@ Header
             </div>
         </div>
     </section>
-    <section id="sponsors" class="">-->
-        <div class="section-header">
+    <section id="sponsors" class="">
+        <div class="row">
+            
+        
+        <div class="col-md-6 col-sm-12">
+            <div class="section-header">
             <h2>Sponsors</h2>
-        </div>
-        <div class="sponsors">
-
-            <div class="sponsor">
-                <img src="https://www.maroc.ma/sites/default/files/image_actualite/anrt.png"
-                     alt="anrt_logo">
             </div>
+            <div class="sponsors">
+
+                <div class="sponsor">
+                    <img src="https://www.maroc.ma/sites/default/files/image_actualite/anrt.png"
+                         alt="anrt_logo">
+                </div>
 
 
-            <div class="sponsor">
-                <img src="https://developer.nvidia.com/sites/default/files/image4.png"
-                     alt="nvidia_logo">
+                <div class="sponsor">
+                    <img src="https://developer.nvidia.com/sites/default/files/image4.png"
+                         alt="nvidia_logo">
+                </div>
+
             </div>
-
-            <div class="sponsor">
-                <img src="https://nassma.um6p.ma/wp-content/uploads/2019/01/logon.png"
-                     alt="nasma_logo">
-            </div>
-
 
         </div>
+
+        <div class="col-md-6 col-sm-12">
+            <div class="section-header">
+            <h2>Partners</h2>
+            </div>
+            <div class="sponsors">
+
+                <div class="sponsor">
+                    <img src="https://nassma.um6p.ma/wp-content/uploads/2019/01/logon.png"
+                         alt="nasma_logo">
+                </div>
+
+
+            </div>
+
+        </div>
+
+        </div>
+        
     </section>
+
+
 </main>
 <!--==========================
   End main
