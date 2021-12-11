@@ -66,7 +66,7 @@ Header
                 <li class="menu-active"><a href="datachallenge.html">Data Challenge</a></li>
                 <li><a href="papers.html">Call For Papers</a></li>
                 <li><a href="registration.html">Registration</a></li>
-                <li class="menu-active"><a href="workshop.html">Workshop</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -96,9 +96,6 @@ Header
                                 In Morocco, the number of registered vehicles doubled between 2000 and 2019. In 2019, a few months before lockdowns due to the Coronavirus Pandemic, 8 road fatalities were recorded per 10 000 registered vehicles. This rate is extremely high when compared with other <a href="https://stats.oecd.org/Index.aspx?DataSetCode=IRTAD_CASUAL_BY_AGE", target="_blank">IRTAD</a> countries. The <a href="https://www.narsa.ma/" target="_blank">National Road Safety Agency (NARSA)</a> established the road safety strategy 2017-26 with the main target to reduce the number of road deaths by 50% between 2015 and 2026 [1].
                             </p>
                             <p>
-                                Law enforcement, speed limit enforcement and traffic control are one of most efficient measures taken by the authorities to achieve modern road user safety. Automatic Number Plate Recognition (ANPR) is used by the police around the world for law and speed limit enforcement and traffic control purposes, including to check if a vehicle is registered or licensed. It is also used as a method of cataloging the movement of traffic by highways agencies. ANPR uses optical character recognition (OCR) to read vehicles’ license plates from images. This is very challenging for many reasons including non-standardized license plate formats, complex image acquisition scenes, camera conditions, environmental conditions, indoor/outdoor or day/night shots, etc.
-                            </p>
-                            <p>
                                 This data-challenge addresses the problem of ANPR in Moroccan licensed vehicles. Based on a small training dataset of 450 labeled car images, the participants have to provide models able to accurately recognize the plate numbers of Morocco licensed vehicles.
                             </p>
 
@@ -122,7 +119,15 @@ Header
                             We provide the plate strings of 450 images (training set). The remaining 204 unlabeled images will be the test set. The participants are asked to provide the plate strings in the test set.
                             </p>
 
-                            <h4>Files</h4>
+                            <h4>How to Participate ?</h4>
+                            <ol>
+                                <li><b>Register on <a href="https://www.kaggle.com/" target="_blank">Kaggle</a></b></li>
+                                <li><b><a href="https://forms.gle/Gx5DHHYn1U6uK2oF7" target="_blank">Register</a> to MoroccoAI Data Challenge:</b> Get Kaggle link</li>
+                                <li><b>Join the Competition</b></li>
+                                <li><b>Submit your Predictions</b></li>
+                            </ol>
+
+                            <!--h4>Files</h4>
                             <ul>
                                 <li>train.csv: the training set</li>
                                 <li>test.csv: the test set
@@ -135,9 +140,9 @@ Header
                             <ul>
                                 <li>image_id:id of the image
                                 <li>plate_string: plate number string
-                            </ul>
+                            </ul-->
 
-                            <h4>Evaluation</h4>
+                            <!--h4>Evaluation</h4>
                             <p>
                             The evaluation metric for this competition is the mean of the Levenshtein distance which is a string metric for measuring the difference between two sequences. Informally, the Levenshtein distance between two strings is the minimum number of single-character edits (insertions, deletions or substitutions) required to change one string into the other (Check this <a href="https://planetcalc.com/1721/" target="_blank">simulator</a>).
                             </p>
@@ -170,11 +175,11 @@ Header
                                         A pickle file (or other format) which is the trained model that will be used by the Test Classification function to classify new data. Please include the team’s name in the filename. This part will be requested after the end of the competition.
                                     </p>
                                 </li>
-                            </ol>
+                            </ol-->
 
                             <h4>Rules of Participation</h4>
                             <ul>
-                                <li> Multiple individuals or entities may collaborate as a team. You may not participate on more than one Team. Each Team member must be a single individual operating a separate Kaggle account
+                                <li>Multiple individuals or entities may collaborate as a team. You may not participate on more than one Team. Each Team member must be a single individual operating a separate Kaggle account
                                 <li>Team membership may not exceed the Maximum of 3 members
                                 <li>The participants are encouraged to take further pictures of vehicles in different situations and environments, label them and add them to the training set in order to increase the classification performance of their models
                                 <li>You agree that upon request from the organizer, you must share your code to allow for reproducibility and checking your result
@@ -215,7 +220,7 @@ Header
                             <div class="section-header">
                                 <h2 >
                                     <a
-                                        href="../posters/CFDC.pdf"
+                                        href="../posters/Conference Data Challenge.pdf"
                                         class="btn btn-outline-primary btn-md"
                                         target="_blank" 
                                     >Call for <span class="challenge-btn">Data Challenge</span></a
