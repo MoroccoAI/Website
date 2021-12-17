@@ -1981,6 +1981,75 @@ input[type="checkbox"] {
   color: #007bff;
 }
 
+/*Panels & panelists*/
+.panel-list {
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
+
+.panel-member {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  width: 230px;
+  display: inline-block;
+  min-height: 200px;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+}
+
+.panel-member a {
+  color: blue;
+  cursor: pointer;
+}
+
+.panel-member-img {
+  width: 200px;
+  height: 200px;
+  /*border: 1px solid #8A9191;*/
+  margin-bottom: 10px;
+}
+
+.panel-member-name {
+  color: #0A073F;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.panel-member-name:hover {
+  color: #f82249;
+}
+
+.panel-member-title {
+  color: #112363;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.panel-member-aff {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: #007bff;
+}
+
+.red-big {
+  color: #f82249;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.red-small{
+  color: #f82249;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*End of Panels*/
+
 .sponsors {
   max-width: 800px;
   overflow: hidden;
@@ -2003,7 +2072,7 @@ input[type="checkbox"] {
 
 .sponsor img {
   /*height: 150px;*/
-  width: 180px;k
+  width: 180px;
   margin: 0 auto;
   padding: 0;
 }
