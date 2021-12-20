@@ -1981,6 +1981,57 @@ input[type="checkbox"] {
   color: #007bff;
 }
 
+/*support team*/
+
+.support-team-list {
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
+
+.support-team-member {
+  margin: 15px;
+  width: 180px;
+  display: inline-block;
+  min-height: 200px;
+  padding: 10px;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: top;
+}
+
+.support-team-member a {
+  color: blue;
+}
+
+.support-img {
+  width: 150px;
+  height: 150px;
+  /*border: 1px solid #8A9191;*/
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.support-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #e0072f;
+  margin-bottom: 5px;
+}
+
+.support-title {
+  color: #0b1126;
+  font-weight: normal;
+  font-size: 10px;
+  margin: 0;
+}
+
+.support-aff {
+  font-size: 10px;
+  margin-bottom: 0;
+  color: #007bff;
+}
+
 /*Panels & panelists*/
 .panel-list {
   overflow: hidden;
