@@ -2060,8 +2060,9 @@ input[type="checkbox"] {
 .panel-member-img {
   width: 200px;
   height: 200px;
-  /*border: 1px solid #8A9191;*/
+  border: 1px solid #8A9191;
   margin-bottom: 10px;
+  border-radius: 50%;
 }
 
 .panel-member-name {
